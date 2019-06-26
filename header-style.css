@@ -1,0 +1,15 @@
+.menu{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40px;
+    background: black;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+  }
