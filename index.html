@@ -1,1 +1,107 @@
-index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Move Your FIT!</title>
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image">
+        <style>
+        body{
+			color: #fff;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+		}
+        #content{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 10px;
+            max-width: 960px;
+            margin: 0 auto;
+            grid-template-areas:
+                     "header header header header"
+                    "nav nav nav nav"
+                    "main main main main"
+                    "section section section section"
+                    "footer footer footer footer";
+        }
+        /* desktop grid */
+        @media screen and (min-width: 760px){
+    		#content{
+    			display: grid;
+    			grid-template-columns: repeat(4, 1fr);
+    			grid-auto-rows: minmax(100px, auto);
+    			grid-gap: 10px;
+    			max-width: 960px;
+    			margin: 0 auto;
+                grid-template-areas:
+                    "header header header header"
+                    "nav nav nav nav"
+                    "main main main main"
+                    "section section section section"
+                    "footer footer footer footer";
+    		}
+        }
+		#content > *{
+			
+            background: #ffa500;
+			padding: 30px;
+		}
+        header{
+            grid-area: header;
+        }
+        nav{
+            grid-area: nav;
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: main;
+        }
+        section{
+            grid-area: section;
+        
+        }
+        footer{
+            grid-area: footer;
+          
+        }
+           
+            
+    
+        </style>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            Tu będzie nagłówek - może to być logo
+        </header>
+        <nav>
+            <a class="menu" href="#">Opction1</a>
+            <a class="menu" href="#">Opction2</a>
+            <a class="menu" href="#">Opction3</a>
+            <a class="menu" href="#">Opction4</a>
+            <a class="menu" href="#">Opction5</a>
+            <a class="menu" href="#">Opction6</a>
+        </nav>
+        <main>
+            Miejsce na zdjęcia tych osiłków w tle plus tekst
+        </main>
+        <section>
+            <article>
+                Treść artykułu 
+            </article>
+        </section>
+ 
+        <footer>
+                Tu jest stopka
+        </footer>
+    </div>
+
+
+</body>
+</html>
