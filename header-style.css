@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+div.container{
+	padding: 0px;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	background: rgb(206, 200, 200);
+	border: 1px solid black;
+}
+
+a {
+	color: white;
+}
