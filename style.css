@@ -6,11 +6,11 @@
 
 .row.heading h2 {
     color: #222831;
-    font-size: 52px;
-    line-height: 95px;
+    font-size: 35px;
+    line-height: 60px;
     font-weight: 700;
     text-align: center;
-    margin: 0 0 40px;
+    margin: 0 auto;
     padding-bottom: 20px;
     letter-spacing: 3px;
 }
@@ -42,22 +42,6 @@ ul
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     border: 0;
 }
-.practice-area .inner h3{ 
-    color:#3c3c3c; 
-	font-size:24px; 
-	font-weight:500;
-	font-family: 'Poppins', sans-serif;
-    padding: 10px 0;
-}
-.practice-area .inner p{ 
-    font-size:14px; 
-	line-height:22px; 
-	font-weight:400;
-}
-.practice-area .inner img{
-	display:inline-block;
-}
-
 
 .our-webcoderskull{
   background: url("img/cement5.png") no-repeat center top / cover;
@@ -135,6 +119,7 @@ ul
     text-decoration: none;
     color:#d65a31;
     margin-top: 20px;
+    font-size: 13px;
 }
 .author-web:hover
 {
