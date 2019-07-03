@@ -11,6 +11,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
     <title>Move Your FIT - Stay connected with Your trainer!</title>
 </head>
 
@@ -69,19 +70,20 @@
         </div>
         </div>
         <div class="cookie-alert row">
-            <p class="cookie-alert--description">Lubisz ciasteczka? Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych, reklamowych oraz funkcjonalnych. Dzięki nim możemy indywidualnie dostosować stronę do twoich potrzeb. Każdy może zaakceptować pliki
-                cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą zbierane żadne informacje. </p>
+            <div class="alert text-center cookiealert" role="alert">
+                <b class="alert-text-center--description">Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
 
-            <a class="cookie-alert--description" href="https://cookiesandyou.com/">Dowiedz się więcej</a>
+                <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+                    I agree
+                </button>
+            </div>
+            <script>
+                for (var i = 1; i <= 150; i++)
+                    document.querySelector("#fillme").innerHTML += "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";
+            </script>
 
-            <button class="cookie-alert__button">
-        <p class="cookie-alert__button--accept">Akceptuję.</p>
-    </button>
-        </div>
-        <div class='button-up'>
-            <a href="#">
-                <button class="button-up__link">Go to beginning</button>
-            </a>
+            <!-- Include cookiealert script -->
+            <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
         </div>
 
     </section>
