@@ -3,11 +3,11 @@
 	font-family: sans-serif;
 }
 
-div.container{
+div.container {
 	padding: 0px;
 }
 
-nav {
+nav.menu {
 	position: sticky;
 	top: 0;
 	background: rgb(206, 200, 200);
@@ -16,4 +16,10 @@ nav {
 
 a {
 	color: white;
+}
+
+section.hero {
+	height: 850px;
+	background-image: url('img/hero1.jpg');
+	background-position: center;
 }

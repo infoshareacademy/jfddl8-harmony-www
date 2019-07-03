@@ -19,20 +19,23 @@
 
 <body>
 
-  <header>
-    <nav class="menu navbar navbar-light bg-light">
-      <a class="menu__item btn btn-lg btn-dark" role="button" a href="#">Opcja1</a>
-      <a class="menu__item btn btn-lg btn-dark" role="button" a href="#">Opcja2</a>
-      <a class="menu__item navbar-brand rounded" href="#"><img src="logo1.svg" alt="logo"></a>
+  <header class="container-fluid">
+  <nav class="menu navbar navbar-light bg-light row">
       <a class="menu__item btn btn-lg btn-dark" role="button" href="#">Opcja3</a>
+      <a class="menu__item btn btn-lg btn-dark" role="button" a href="#">Opcja1</a>
+      <a class="menu__item navbar-brand rounded" href="#"><img src="img/logo1.svg" alt="logo"></a>
+      <a class="menu__item btn btn-lg btn-dark" role="button" a href="#">Opcja2</a>
       <a class="menu__item btn btn-lg btn-dark" role="button" href="#">Opcja4</a>
     </nav>
-    <section class="hero">
-      <div class="hero__item d-flex">
-        <p>Stay connected with your trainer!</p>
+    <section class="hero row">
+      <div class="hero__item col d-flex align-items-start">
+        <p class="hero__item-text">Stay connected with your trainer!</p>
       </div>
-      <div class="hero__item d-flex">
-        <p>Control you training, diet and progress!</p>
+      <div class="hero__item col d-flex align-items-center">
+          <a href="#" class="hero__item-text">Read more!</a>
+        </div>
+      <div class="hero__item col d-flex align-items-end">
+        <p class="hero__item-text">Control you training, diet and progress!</p>
       </div>
     </section>
   </header>
