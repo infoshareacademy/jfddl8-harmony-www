@@ -2,4 +2,4 @@
 
 Harmony team website
 
-Link [here](https://www.move-your-fit.jfddl8.is-academy.pl/)
+Link [here](http://www.move-your-fit.jfddl8.is-academy.pl/)
