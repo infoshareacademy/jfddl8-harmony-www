@@ -117,6 +117,44 @@
 }
 
 .author__link:hover {
+<<<<<<< HEAD
+    text-decoration: none;
+    color: #222831;
+}
+
+.cookiealert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    opacity: 0;
+    border-radius: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    color: #ecf0f1;
+    background: #212327;
+}
+
+.cookiealert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    text-decoration: underline
+}
+
+.cookiealert .acceptcookies {
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+
+.alert-text-center--description {
+    font-family: 'Work sans'
+}
+=======
   text-decoration: none;
   color: #222831;
 }
@@ -178,3 +216,4 @@
   margin: 15px auto 0 auto;
   text-align: center;
 }
+>>>>>>> 046cf8a2c57dfcf4e7fadf9c6b5a63bec7c489cd
