@@ -1,7 +1,12 @@
 div.wrapper {
 	position: sticky;
 	top: 0;
-	padding: 0px 0px;
+padding: 0px 0px;
+z-index: 999;
+}
+
+div.menu-full-row{
+margin: 0px;
 }
 
 a {
@@ -29,7 +34,7 @@ a:hover {
 	align-items: center;
 }
 
-.menu-bar, .menu-bar__item {
+.menu-bar, .menu-bar__item,  .menu-bar__item2{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -40,8 +45,24 @@ button.navbar-toggler {
 }
 
 section.hero {
-	height: 850px;
-	background-image: url('img/hero1.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
+	height: 100vh;
+	background-image: url('img/hero-2.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center center;
 }
+
+div.hero-item.row{
+margin: 0px;
+height: 60vh;
+}
+
+div.hero-item__main-content{
+width: 30rem;
+border-radius:12px;
+border:1px solid #dcdcdc;
+background-color: rgba(253, 253, 253, 0.541)
+}
+
+
+
