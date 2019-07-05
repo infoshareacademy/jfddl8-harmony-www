@@ -14,7 +14,6 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  /* border-bottom: 1px solid #d65a31; */
   margin: 0 auto;
   padding: 30px 0;
   letter-spacing: 3px;
@@ -118,10 +117,10 @@
 }
 
 .author__link:hover {
-  text-decoration: none;
-  color: #d65a31;
-  transition: 0.5s;
-}
+      text-decoration: none;
+      color: #d65a31;
+      transition: 0.5s;
+  }
 
 .app-information {
   background: url("img/dumbells.jpeg") no-repeat center top / cover;
@@ -138,7 +137,7 @@
   display: inline-block;
   width: 100%;
   margin: 0;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
 }
 .box-app__icon {
@@ -164,7 +163,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90px;
+  height: 110px;
   width: 100%;
   color: #222831;
   font-size: 20px;
@@ -180,14 +179,4 @@
   font-size: 16px;
   margin: 10px auto 0 auto;
   text-align: center;
-}
-@media (max-width: 767px) {
-  .box__about-app p {
-    font-size: 13px;
-  }
-}
-@media (max-width: 1024px) {
-  .box__about-app p {
-    font-size: 15px;
-  }
 }
