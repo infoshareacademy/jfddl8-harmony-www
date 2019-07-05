@@ -81,9 +81,6 @@
     color: #d65a31;
 }
 
-
-/* .our-webcoderskull .cnt-block */
-
 .author__position {
     color: #2a2a2a;
     font-size: 13px;
@@ -155,14 +152,11 @@
     font-family: 'Work sans'
 }
 
-text-decoration: none;
-color: #222831;
-
-}
 .app-information {
     background-color: #eeeeee;
     text-align: center;
 }
+
 .section-name {
     color: #222831;
     font-size: 35px;
@@ -173,6 +167,7 @@ color: #222831;
     padding-bottom: 20px;
     letter-spacing: 3px;
 }
+
 .box-app {
     display: inline-block;
     width: 100%;
@@ -180,6 +175,7 @@ color: #222831;
     margin: 0;
     text-align: center;
 }
+
 .box-app__icon {
     display: block;
     width: 90px;
@@ -192,9 +188,11 @@ color: #222831;
     border-radius: 100%;
     background-color: #393e46;
 }
+
 .box-app-information {
     margin: 0 auto;
 }
+
 .box__about-app {
     display: block;
     height: 90px;
@@ -206,6 +204,7 @@ color: #222831;
     text-transform: uppercase;
     border-bottom: 1px solid #d65a31;
 }
+
 .box__about-app__description {
     display: block;
     width: 60%;
@@ -214,6 +213,7 @@ color: #222831;
     margin: 15px auto 0 auto;
     text-align: center;
 }
+
 .scrollTop {
     position: fixed;
     opacity: 0.5;
@@ -229,12 +229,15 @@ color: #222831;
     right: 30px;
     bottom: 5px;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 .button-up {
     color: #222831;
 }
+
 .button-up:hover {
-    font color: #eeeeee;
+    color: #eeeeee;
 }
