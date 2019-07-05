@@ -8,21 +8,17 @@
         return;
     }
 
-    cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+    cookieAlert.offsetHeight;
 
-    // Show the alert if we cant find the "acceptCookies" cookie
     if (!getCookie("acceptCookies")) {
         cookieAlert.classList.add("show");
     }
 
-    // When clicking on the agree button, create a 1 year
-    // cookie to remember user's choice and close the banner
     acceptCookies.addEventListener("click", function() {
         setCookie("acceptCookies", true, 365);
         cookieAlert.classList.remove("show");
     });
 
-    // Cookie functions from w3schools
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
