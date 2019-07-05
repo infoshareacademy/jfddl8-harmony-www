@@ -2,15 +2,20 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
-
+.row{
+  margin: 0;
+}
 .section-name {
+  
+  width: 60%;
   color: #222831;
   font-size: 35px;
   line-height: 60px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding: 30px 0;
   letter-spacing: 3px;
 }
 
@@ -20,13 +25,8 @@
 
 .padding-lg {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.padding-lg {
-  padding-bottom: 55px;
-  padding-top: 55px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .harmony-team .author:hover {
@@ -35,16 +35,23 @@
 }
 
 .harmony-team {
-  background: url("img/cement5.png") no-repeat center top / cover;
+  background: #eee;
+  
 }
-
+.authors
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
 .authors__author {
   float: left;
   width: 100%;
-  background: #eee;
+  background: rgb(34,40,49);
+  background: linear-gradient(0deg, rgba(34,40,49,1) 0%, rgba(238,238,238,1) 100%);
   padding: 30px 20px;
   text-align: center;
-  border: 2px solid #d5d5d5;
   margin: 0 0 28px;
 }
 
@@ -63,123 +70,74 @@
 }
 
 .author__name {
-  color: #2a2a2a;
+  color: #eee;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 6px 0;
   text-transform: uppercase;
-  border-bottom: 2px solid #d65a31;
+  border-bottom: 1px solid #d65a31;
   letter-spacing: 0, 5px;
 }
 
 .author__socialmedialink {
   text-decoration: none;
-  color: #222831;
 }
-
-.author__socialmedialink:hover {
-  color: #d65a31;
-}
-
-/* .our-webcoderskull .cnt-block */
 
 .author__position {
-  color: #2a2a2a;
+  color: #eee;
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
 }
 
 .authors__author .follow-us {
-  margin: 20px 0 0;
-}
-
-.authors__author .follow-us {
   display: inline-block;
   width: 100%;
-  margin: 0 5px;
+  margin: 0 auto 40px auto;
 }
 
 .author__socialmediaicon {
   font-size: 24px;
+  padding: 0 5px;
   color: #d65a31;
 }
 
 .author__socialmediaicon:hover {
-  color: #222831;
+  color: #eee;
+  transition: 0.5s;
 }
 
 .author__link {
   text-decoration: none;
-  color: #d65a31;
+  color: #eee;
+  text-transform: uppercase;
   margin-top: 20px;
+  padding: 10px;
   font-size: 13px;
 }
 
 .author__link:hover {
-<<<<<<< HEAD
-    text-decoration: none;
-    color: #222831;
-}
-
-.cookiealert {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    opacity: 0;
-    border-radius: 0;
-    transform: translateY(100%);
-    transition: all 500ms ease-out;
-    color: #ecf0f1;
-    background: #212327;
-}
-
-.cookiealert.show {
-    opacity: 1;
-    transform: translateY(0%);
-    transition-delay: 1000ms;
-}
-
-.cookiealert a {
-    text-decoration: underline
-}
-
-.cookiealert .acceptcookies {
-    margin-left: 10px;
-    vertical-align: baseline;
-}
-
-.alert-text-center--description {
-    font-family: 'Work sans'
-}
-=======
-  text-decoration: none;
-  color: #222831;
-}
+      text-decoration: none;
+      color: #d65a31;
+      transition: 0.5s;
+  }
 
 .app-information {
-  background-color: #eeeeee;
+  background: url("img/dumbells.jpeg") no-repeat center top / cover;
+  background-attachment: fixed;
   text-align: center;
+  padding: 0;
+  
 }
-
-.section-name {
-  color: #222831;
-  font-size: 35px;
-  line-height: 60px;
-  font-weight: 700;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 20px;
-  letter-spacing: 3px;
+.app-information__background {
+  background-color: rgb(238, 238, 238, 0.8);
+  margin: 0;
 }
-
 .box-app {
   display: inline-block;
   width: 100%;
-  padding: 20px 0;
   margin: 0;
+  padding: 20px;
   text-align: center;
 }
 .box-app__icon {
@@ -190,30 +148,35 @@
   color: #eee;
   margin: 0 auto;
   padding: 15px 0;
-  border: 2px solid #393e46;
+  border: 2px solid #222831;
   border-radius: 100%;
-  background-color: #393e46;
+  background-color: #222831;
 }
 .box-app-information {
+  display: flex;
   margin: 0 auto;
 }
+.box__about-app p {
+  margin: 0;
+}
 .box__about-app {
-  display: block;
-  height: 90px;
-  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  width: 100%;
   color: #222831;
   font-size: 20px;
-  margin: 15px auto 0 auto;
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   border-bottom: 1px solid #d65a31;
 }
 .box__about-app__description {
   display: block;
-  width: 60%;
-  color: #393e46;
+  width: 100%;
+  color: #222831;
   font-size: 16px;
-  margin: 15px auto 0 auto;
+  margin: 10px auto 0 auto;
   text-align: center;
 }
->>>>>>> 046cf8a2c57dfcf4e7fadf9c6b5a63bec7c489cd
