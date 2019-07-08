@@ -2,6 +2,7 @@
 <html lang="pl">
 
 <head>
+  
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css" content="css reset">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,28 +13,68 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+    <link rel="stylesheet" type="text/css" href="header-style.css">
     <title>Move Your FIT - Stay connected with Your trainer!</title>
 </head>
 
 <body>
 
+  <div class="wrapper container-fluid">
     <header>
-        <nav class="menu navbar navbar-light bg-light">
-            <a class="menu__item btn btn-lg btn-dark" role="button" a href="#">Opcja1</a>
-            <a class="menu__item btn btn-lg btn-dark" role="button" a href="#">Opcja2</a>
-            <a class="menu__item navbar-brand rounded" href="#"><img src="logo1.svg" alt="logo"></a>
-            <a class="menu__item btn btn-lg btn-dark" role="button" href="#">Opcja3</a>
-            <a class="menu__item btn btn-lg btn-dark" role="button" href="#">Opcja4</a>
-        </nav>
-        <section class="hero">
-            <div class="hero__item d-flex">
-                <p>Stay connected with your trainer!</p>
-            </div>
-            <div class="hero__item d-flex">
-                <p>Control you training, diet and progress!</p>
-            </div>
-        </section>
+      <div class="menu-full collapse " id="navbarHeader">
+        <div class="menu-full-row row">
+          <div class="menu-full__item1 col-sm-8 col-md-7 container">
+            <h3>Najlepsza aplikacja treningowa!</h3>
+            <p class="">Dzięki naszej aplikacji kontroluj swój progres, kontatkuj się ze swoim trenerem, urozmaicaj
+              dietę!</p>
+            <h4>Bądź na bieżąco! Zapisz się do naszego newslettera!</h4>
+          </div>
+          <div class="menu-full__item2 col-sm-4">
+            <ul class="menu-list list-unstyled">
+              <li><a class="menu-list__link" href="#">o aplikacji</a></li>
+              <li><a class="menu-list__link" href="#">opinie użytkowników</a></li>
+              <li><a class="menu-list__link" href="#">nasz zespół</a></li>
+              <li><a class="menu-list__link" href="#">kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-bar navbar navbar-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <div class="menu-bar__item1 col-sm-8 col-md-7 container">
+            <h8>Move your fit line logo?</h8>
+          </div>
+          <div class="menu-bar__item2 col-sm-4">
+            <button class="menu-bar__item navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
+  </div>
+  
+  <section class="hero container-fluid;">
+    <div class="hero-item row">
+      <div class="hero-item__main col align-self-end">
+          <div class="hero-item__main-content card-body">
+              <h5 class="card-title">Move your FIT</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Zajebiaszcza aplikacja!</h6>
+              <p class="card-text">Ale to jest świetna apka.<br> 
+                Czego to ona nie ma i nie robi. <br> 
+                Dajcie spokój, lepszej nikt, nigdy nie zrobi. <br> 
+                Nie ma szans, cześć i czapka.
+              </p>
+              <a href="#" class="card-link">Linkacz</a>
+              <a href="#" class="card-link">Linkacz</a>
+            </div>
+        <!-- <p class="hero-item__main-content">cos cos cos cso</p> -->
+      </div>
+    </div>
+  </section>
 
     <main>
         <section class="app-information container-fluid">
@@ -154,7 +195,8 @@
             <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
         </section>
         <script src="button-up.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     </main>
-    git checkout </body>
+    </body>
 
 </html>
