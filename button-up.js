@@ -1,25 +1,15 @@
-$(function() {
-    var isClicked = false;
-    $('.scrollTop').css("display", "none");
-    $(window).scroll(function() {
-        if (isClicked == false) {
-            if ($(this).scrollTop() > 300) { $('.scrollTop').show(); } else { $('.scrollTop').hide(); }
-        }
-    });
+window.onscroll = function() { scrollFunction() };
 
-    $('.scrollTop').click(function() {
-        isClicked = true;
-        $('.scrollTop').fadeOut(500);
-        $('html, body').animate({
-            scrollTop: 0
-        }, 800, function() {
-            isClicked = false;
-        });
-    });
-    $('.scrollTop').on("mouseenter", function() {
-        $('.scrollTop').css({ opacity: '1.0' });
-    });
-    $('.scrollTop').on("mouseleave", function() {
-        $('.scrollTop').css({ opacity: '0.5' });
-    });
-});
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
