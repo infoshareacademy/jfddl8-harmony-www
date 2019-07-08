@@ -9,7 +9,7 @@ div.menu-full-row{
 margin: 0px;
 }
 
-a {
+a.card-link, a.menu-list__link {
 	padding-bottom: 0px !important;
 	color: #2a2a2a;
 	font-size: 20px;
