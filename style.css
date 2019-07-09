@@ -53,8 +53,35 @@
     background: linear-gradient( 0deg, rgba(34, 40, 49, 1) 0%, rgba(238, 238, 238, 1) 100%);
     padding: 30px 20px;
     text-align: center;
-    margin: 0 0 28px;
+    margin: 100px 0 28px;
 }
+
+.slide-top {
+	-webkit-animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  
 
 .authors__author figure {
     width: 148px;
