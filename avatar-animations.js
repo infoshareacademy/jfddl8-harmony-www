@@ -1,11 +1,11 @@
 $(window).scroll(function() {
-  var position = $(".authors").offset();
-  var scroll = $(window).scrollTop();
-  console.log(scroll, position.top);
+  const position = $("#am").offset();
+  const scroll = $(window).scrollTop() + $(window).height();
+  const avatarHeight = $("#am").height();
+  console.log(scroll, position);
 
-  if (scroll >= position.top - 500) {
-
-    console.log('animation start')
+  if (scroll >= position.top + avatarHeight) {
+    console.log("animation start");
     setTimeout(animate, 1000);
     function animate() {
       $("#am").addClass("rotate");
