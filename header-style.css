@@ -1,4 +1,5 @@
 div.wrapper {
+<<<<<<< HEAD
     position: sticky;
     top: 0;
     padding: 0px 0px;
@@ -7,10 +8,21 @@ div.wrapper {
 
 div.menu-full-row {
     margin: 0px;
+=======
+  position: sticky;
+  top: 0;
+  padding: 0px 0px;
+  z-index: 999;
+}
+
+div.menu-full-row {
+  margin: 0px;
+>>>>>>> 0e98adb155a2ed58b95882015faffde0c4904844
 }
 
 a.card-link,
 a.menu-list__link {
+<<<<<<< HEAD
     padding-bottom: 0px !important;
     color: #2a2a2a;
     font-size: 20px;
@@ -23,23 +35,48 @@ a.menu-list__link {
 a:hover {
     color: #d65a31;
     text-decoration: none;
+=======
+  padding-bottom: 0px !important;
+  color: #2a2a2a;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid #d65a31;
+}
+
+a:hover {
+  color: #d65a31;
+  text-decoration: none;
+>>>>>>> 0e98adb155a2ed58b95882015faffde0c4904844
 }
 
 .menu-full,
 .menu-bar {
+<<<<<<< HEAD
     background-color: #eee;
+=======
+  background-color: #eee;
+>>>>>>> 0e98adb155a2ed58b95882015faffde0c4904844
 }
 
 .menu-list,
 .menu-full__item1 {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+>>>>>>> 0e98adb155a2ed58b95882015faffde0c4904844
 }
 
 .menu-bar,
 .menu-bar__item,
 .menu-bar__item2 {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,3 +105,34 @@ div.hero-item__main-content {
     border: 1px solid #dcdcdc;
     background-color: rgba(253, 253, 253, 0.541)
 }
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button.navbar-toggler {
+  background-color: #393e46;
+}
+
+section.hero {
+  height: 100vh;
+  background-image: url("img/hero-2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+div.hero-item.row {
+  margin: 0px;
+  height: 60vh;
+}
+
+div.hero-item__main-content {
+  width: 30rem;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  background-color: rgba(253, 253, 253, 0.541);
+}
+
+>>>>>>> 0e98adb155a2ed58b95882015faffde0c4904844
