@@ -277,6 +277,7 @@ html {
     width: 1024px;
     height: 400px;
     text-align: center;
+    background: #2a2a2a;
 }
 
 .sliderblock__list {
@@ -306,7 +307,6 @@ html {
     height: 22px;
     padding: 14px 0;
     margin-top: -25px;
-    background: #2a2a2a;
     color: #fff;
     text-decoration: none;
     font-size: 30px;
@@ -326,9 +326,4 @@ html {
 
 .sliderblock--nextarrow {
     right: 0;
-}
-
-.sliderblock--nextarrow:hover,
-.sliderblock--prevarrow:hover {
-    background: #ff6138;
 }
