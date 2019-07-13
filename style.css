@@ -412,3 +412,7 @@ html {
 .features__container--row {
     margin: 10px;
 }
+
+.features__photo {
+    height: 300px;
+}
