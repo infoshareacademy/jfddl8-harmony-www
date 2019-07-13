@@ -17,24 +17,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
     <link rel="stylesheet" type="text/css" href="header-style.css">
     <title>Move Your FIT - Stay connected with Your trainer!</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link rel="stylesheet" href="normalize.css" content="css reset" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css" />
+    <link rel="stylesheet" type="text/css" href="header-style.css" />
 </head>
 
 <body>
-
     <div class="wrapper container-fluid">
         <header>
             <div class="menu-full collapse " id="navbarHeader">
                 <div class="menu-full-row row">
                     <div class="menu-full__item1 col-sm-8 col-md-7 container">
                         <h3>Najlepsza aplikacja treningowa!</h3>
-                        <p class="">Dzięki naszej aplikacji kontroluj swój progres, kontatkuj się ze swoim trenerem, urozmaicaj dietę!
+                        <p class="">
+                            Dzięki naszej aplikacji kontroluj swój progres, kontatkuj się ze swoim trenerem, urozmaicaj dietę!
                         </p>
                         <h4>Bądź na bieżąco! Zapisz się do naszego newslettera!</h4>
                     </div>
                     <div class="menu-full__item2 col-sm-4">
                         <ul class="menu-list list-unstyled">
                             <li><a class="menu-list__link" href="#">o aplikacji</a></li>
-                            <li><a class="menu-list__link" href="#">opinie użytkowników</a></li>
+                            <li>
+                                <a class="menu-list__link" href="#">opinie użytkowników</a>
+                            </li>
                             <li><a class="menu-list__link" href="#">nasz zespół</a></li>
                             <li><a class="menu-list__link" href="#">kontakt</a></li>
                         </ul>
@@ -49,8 +64,8 @@
                     </div>
                     <div class="menu-bar__item2 col-sm-4">
                         <button class="menu-bar__item navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+                <span class="navbar-toggler-icon"></span>
+              </button>
                     </div>
                 </div>
             </div>
@@ -62,13 +77,15 @@
             <div class="hero-item__main col align-self-end">
                 <div class="hero-item__main-content card-body">
                     <h5 class="card-title">Move your FIT</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Zajebiaszcza aplikacja!</h6>
-                    <p class="card-text">Ale to jest świetna apka.<br> Czego to ona nie ma i nie robi. <br> Dajcie spokój, lepszej nikt, nigdy nie zrobi. <br> Nie ma szans, cześć i czapka.
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        Zajebiaszcza aplikacja!
+                    </h6>
+                    <p class="card-text">
+                        Ale to jest świetna apka.<br /> Czego to ona nie ma i nie robi. <br /> Dajcie spokój, lepszej nikt, nigdy nie zrobi. <br /> Nie ma szans, cześć i czapka.
                     </p>
                     <a href="#" class="card-link">Linkacz</a>
                     <a href="#" class="card-link">Linkacz</a>
                 </div>
-                <!-- <p class="hero-item__main-content">cos cos cos cso</p> -->
             </div>
         </div>
     </section>
@@ -118,7 +135,7 @@
             <div class="authors row">
                 <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                     <div class="authors__author equal-hight">
-                        <figure><img src="img/angelikamaciazek.jpg" class="img-responsive author__img" alt=""></figure>
+                        <figure id="am"><img src="img/angelikamaciazek.jpg" class="img-responsive author__img slide-fwd-center" alt=""></figure>
                         <h3 class="author__name">Angelika<br>Maciążek</h3>
                         <p class="author__position">Junior Front-End Developer</p>
                         <div class="follow-us clearfix">
@@ -139,7 +156,7 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                     <div class="authors__author equal-hight">
-                        <figure><img src="img/beatarudzka.jpg.jpg" class="img-responsive author__img" alt="">
+                        <figure id="br"><img src="img/beatarudzka.jpg.jpg" class="img-responsive author__img" alt="">
                         </figure>
                         <h3 class="author__name">Beata<br>Rudzka</h3>
                         <p class="author__position">Junior Front-End Developer</p>
@@ -160,8 +177,7 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-4 col-xl-3">
                     <div class="authors__author equal-hight">
-                        <figure><img src="img/adamwitzberg.jpg" class="img-responsive author__img" alt="">
-                        </figure>
+                        <figure id="aw"><img src="img/adamwitzberg.jpg" class="img-responsive author__img" alt=""></figure>
                         <h3 class="author__name">Adam<br>Witzberg</h3>
                         <p class="author__position">Junior Front-End Developer</p>
                         <div class="follow-us clearfix">
@@ -217,6 +233,15 @@
         <script src="slider.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     </main>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+<script src="button-up.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="avatar-animations.js"></script>
 </body>
 
 </html>
