@@ -7,10 +7,6 @@ a.mainmenu-item__link {
 	border-bottom: 2px solid #d65a31;
 }
 
-a.mainmenu-item__link {
-	margin: 0, 30px;
-}
-
 a.mainmenu-item__link:hover,
 a.card-link:hover {
 	color: #d65a31;
@@ -36,7 +32,7 @@ div.hero-item.row {
 }
 
 div.hero-item__main-content {
-	width: 30rem;
+	width: 30%;
 	border-radius: 12px;
 	border: 1px solid #dcdcdc;
 	background-color: rgba(253, 253, 253, 0.541)
