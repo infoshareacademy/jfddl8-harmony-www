@@ -48,3 +48,8 @@ div.hero-item__main-content {
 	}
 }
 
+@media(max-width: 360px) {
+	#global-nav {
+		display: none;
+	}
+}
