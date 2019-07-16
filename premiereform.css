@@ -5,6 +5,8 @@
 .premiere{
   width: 100%;
   text-align: center;
+  background-color: #eee;
+  padding-bottom: 20px;
 }
 .premiere__text{
 font-size: 20px;
