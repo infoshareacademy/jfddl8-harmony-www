@@ -19,13 +19,30 @@
     letter-spacing: 2px;
 }
 
+.section-name__team{
+    width: 90%;
+    color: #eee;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+
 @media (min-width: 1000px) and (orientation: landscape) {
     .section-name {
     font-size: 35px;
     padding: 30px 0;
     }
   }
-
+@media (min-width: 1000px) and (orientation: landscape) {
+    .section-name__team {
+    font-size: 35px;
+    padding: 30px 0;
+    }
+  }
 
 .heading.heading-icon {
     display: block;
@@ -43,7 +60,7 @@
 }
 
 .harmony-team {
-    background: #eee;
+    background: #393e46;
 }
 
 .authors {
@@ -56,11 +73,14 @@
 .authors__author {
     float: left;
     width: 100%;
-    background: rgb(34, 40, 49);
-    background: linear-gradient( 0deg, rgba(34, 40, 49, 1) 0%, rgba(238, 238, 238, 1) 100%);
+    background: transparent;
     padding: 30px 20px;
     text-align: center;
     margin: 0 28px;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 5px 5px 7px -2px rgba(238,238,238,1);
+    -moz-box-shadow: 5px 5px 7px -2px rgba(238,238,238,1);
+    box-shadow: 5px 5px 7px -2px rgba(238,238,238,1);
 }
 
 .slide-fwd-center {
@@ -111,8 +131,8 @@
     font-weight: 700;
     padding: 6px 0;
     text-transform: uppercase;
-    border-bottom: 1px solid #d65a31;
-    letter-spacing: 0, 5px;
+    border-bottom: 1px solid #eee;
+    letter-spacing: 1px;
 }
 
 .author__socialmedialink {
@@ -134,12 +154,19 @@
 
 .author__socialmediaicon {
     font-size: 22px;
-    padding: 0 3px;
-    color: #d65a31;
+    padding: 5px;
+    color: #393e46;
+    border: 1px solid #eee;
+    background-color: #eee;
+    margin: 0 5px;
+    border-radius: 2px;
+
 }
 
 .author__socialmediaicon:hover {
     color: #eee;
+    border: 1px solid #393e46;
+    background-color: #393e46;
     transition: 0.5s;
 }
 
@@ -154,8 +181,9 @@
 
 .author__link:hover {
     text-decoration: none;
-    color: #d65a31;
+    font-size: 15px;
     transition: 0.5s;
+    color: #eee;
 }
 
 .app-information {
