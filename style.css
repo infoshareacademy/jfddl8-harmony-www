@@ -8,17 +8,24 @@
 }
 
 .section-name {
-    width: 60%;
+    width: 100%;
     color: #222831;
-    font-size: 35px;
-    line-height: 60px;
+    font-size: 25px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto;
-    padding: 30px 0;
-    letter-spacing: 3px;
+    padding: 10px 0;
+    letter-spacing: 2px;
 }
+
+@media (min-width: 700px) {
+    .section-name {
+        width: 90%;
+        padding: 10px;
+      
+    }
+  }
 
 .heading.heading-icon {
     display: block;
