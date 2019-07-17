@@ -28,18 +28,17 @@
 
 <body>
 
-  <div class="wrapper container-fluid">
+  <div id='hero' class="wrapper container-fluid">
     <section id="global-nav" class="mainmenu navbar fixed-top row justify-content-between">
       <p>Tu będzie logo</p>
-      <a id='a1' class="mainmenu-item__link" id='opcja1' href="#">Opcja 1</a>
-      <a id='a2'  class="mainmenu-item__link" id='opcja2' href="#">Opcja 2</a>
-      <a id='a3'  class="mainmenu-item__link" id='opcja3' href="#">Opcja 3</a>
-      <a id='a4'  class="mainmenu-item__link" id='opcja4' href="#">Opcja 4</a>
-      <a id='a5'  class="mainmenu-item__link" id='opcja5' href="#">Opcja 5</a>
+      <a id='appinfo-link' class="mainmenu-item__link" id='opcja1' href="#">Opcja 1</a>
+      <a id='features-link' class="mainmenu-item__link" id='opcja2' href="#">Opcja 2</a>
+      <a id='team-link' class="mainmenu-item__link" id='opcja3' href="#">Opcja 3</a>
+      <a id='last-link' class="mainmenu-item__link" id='opcja4' href="#">Opcja 4</a>
     </section>
   </div>
 
-  <section id="id1" class="hero container-fluid;">
+  <section class="hero container-fluid;">
     <div class="hero-item row">
       <div class="hero-item__main col align-self-center">
         <div class="hero-item__main-content card-body">
@@ -55,234 +54,234 @@
         </div>
       </div>
     </div>
-
-    <main>
-      <section id='id2' class="app-information container-fluid">
-        <div class="app-information__background">
-          <div class="row">
-            <h2 class="col-12 section-name">Jedyna aplikacja na rynku, w której:</h2>
-          </div>
-          <div class="main-box-app row">
-            <div class="box-app col-12 col-sm-6 col-xl-3">
-              <i class="box-app__icon fas fa-clipboard"></i>
-              <div class="box__about-app">
-                <p>Masz dostęp do dziennika treningowego online</p>
-              </div>
-              <p class="box__about-app__description">Zapisujesz swoje postępy, sprawdzasz progres!</p>
+  </section>
+  <main>
+    <section class="app-information container-fluid">
+      <div class="app-information__background">
+        <div class="row">
+          <h2 class="col-12 section-name">Jedyna aplikacja na rynku, w której:</h2>
+        </div>
+        <div class="main-box-app row">
+          <div class="box-app col-12 col-sm-6 col-xl-3">
+            <i class="box-app__icon fas fa-clipboard"></i>
+            <div class="box__about-app">
+              <p>Masz dostęp do dziennika treningowego online</p>
             </div>
-            <div class="box-app col-12 col-sm-6 col-xl-3">
-              <i class="box-app__icon fas fa-comments"></i>
-              <div class="box__about-app">
-                <p>Jesteś w stałym kontakcie z Twoim trenerem</p>
-              </div>
-              <p class="box__about-app__description">Masz pytanie? Potrzebujesz motywacji? Napisz do swojego trenera!
+            <p class="box__about-app__description">Zapisujesz swoje postępy, sprawdzasz progres!</p>
+          </div>
+          <div class="box-app col-12 col-sm-6 col-xl-3">
+            <i class="box-app__icon fas fa-comments"></i>
+            <div class="box__about-app">
+              <p>Jesteś w stałym kontakcie z Twoim trenerem</p>
+            </div>
+            <p class="box__about-app__description">Masz pytanie? Potrzebujesz motywacji? Napisz do swojego trenera!
+            </p>
+            </p>
+          </div>
+          <div class="box-app col-12 col-sm-6 col-xl-3">
+            <i class="box-app__icon fas fa-dumbbell"></i>
+            <div class="box__about-app">
+              <p>Dowiesz się jak trenować</p>
+            </div>
+            <p class="box__about-app__description">Plan treningowy dostepny zawsze w Twoim smartfonie!</p>
+          </div>
+          <div class="box-app col-12 col-sm-6 col-xl-3">
+            <i class="box-app__icon fas fa-utensils"></i>
+            <div class="box__about-app">
+              <p>Masz dostęp do przepisów</p>
+            </div>
+            <p class="box__about-app__description">Już nigdy nie zabraknie Ci pomysłu na obiad!</p>
+          </div>
+        </div>
+    </section>
+
+    <section id='appinfo' class="premiere">
+      <h2 class="section-name">Nie możesz doczekać się premiery?</h2>
+      <p class="premiere__text">Poinformujemy Cię o terminie!</p>
+      <p class="premiere__text">Zapisz się już dziś i odbierz nagrodę!</p>
+      <form action="https://formspree.io/moveyourfit@onet.pl" method="POST">
+        <input class="form__box" type="text" name="name" placeholder="Imię">
+        <input class="form__box" type="email" name="_replyto" placeholder="E-mail">
+        <input class="button__send" type="submit" value="Zapisz się!">
+        <input type="hidden" name="_next" value="http://www.move-your-fit.jfddl8.is-academy.pl/">
+      </form>
+      <p class="premiere__email">*Informujemy, że wyślemy tylko jednego maila z informacją o premierze.</p>
+      <a href="./private-politicy/private-politicy.html" class="premiere__private-politycy" target="_blank">Polityka
+        prywatności</a>
+    </section>
+    <section>
+      <div id='features' class="features__container">
+        <div class="row">
+          <div class="features__container--row">
+            <img class="features__photo" src="img/analysis-chart-cup.jpg" />
+          </div>
+          <div class="col-md-6 col-md-offset-1">
+            <div class="features__description">
+              <h2 class="features__description--title">Kontroluj swoje dokonania.</h2>
+              <hr class="features__description--hr">
+              <p class="features__description--text">Rejestruj swoją aktywność dzięki czytelnym wykresom Twoich
+                postępów, co ułatwia analizę dotychczasowych wyników i pomaga w zaplanowaniu dalszych treningów.
               </p>
+            </div>
+          </div>
+          <div class="features__container--row">
+            <img class="features__photo" src="img/beef-berries-breads.jpg" />
+          </div>
+          <div class="col-md-6 col-md-offset-1">
+            <div class="features__description">
+              <h2 class="features__description--title">Trzymaj swoje ulubione przepisy w jednym miejscu.</h2>
+              <hr class="features__description--hr">
+              <p class="features__description--text">Zapisuj swoje przepisy na każdy dzień tygodnia aby móc je oceniać
+                i dzielić się nimi z Twoim trenerem.
               </p>
             </div>
-            <div class="box-app col-12 col-sm-6 col-xl-3">
-              <i class="box-app__icon fas fa-dumbbell"></i>
-              <div class="box__about-app">
-                <p>Dowiesz się jak trenować</p>
-              </div>
-              <p class="box__about-app__description">Plan treningowy dostepny zawsze w Twoim smartfonie!</p>
-            </div>
-            <div class="box-app col-12 col-sm-6 col-xl-3">
-              <i class="box-app__icon fas fa-utensils"></i>
-              <div class="box__about-app">
-                <p>Masz dostęp do przepisów</p>
-              </div>
-              <p class="box__about-app__description">Już nigdy nie zabraknie Ci pomysłu na obiad!</p>
+          </div>
+          <div class="features__container--row">
+            <img class="features__photo" src="img/brainstorming.jpg" />
+          </div>
+          <div class="col-md-6 col-md-offset-1">
+            <div class="features__description">
+              <h2 class="features__description--title">Bądź w kontakcie ze swoim trenerem.</h2>
+              <hr class="features__description--hr">
+              <p class="features__description--text">Nie czekaj na spotkanie z trenem. Dzięki udostępnieniu swoich
+                postępów, zawsze możesz liczyć na komentarz i analizę ekspertów.
+              </p>
             </div>
           </div>
-      </section>
-
-      <section id='id3' class="premiere">
-        <h2 class="section-name">Nie możesz doczekać się premiery?</h2>
-        <p class="premiere__text">Poinformujemy Cię o terminie!</p>
-        <p class="premiere__text">Zapisz się już dziś i odbierz nagrodę!</p>
-        <form action="https://formspree.io/moveyourfit@onet.pl" method="POST">
-          <input class="form__box" type="text" name="name" placeholder="Imię">
-          <input class="form__box" type="email" name="_replyto" placeholder="E-mail">
-          <input class="button__send" type="submit" value="Zapisz się!">
-          <input type="hidden" name="_next" value="http://www.move-your-fit.jfddl8.is-academy.pl/">
-        </form>
-        <p class="premiere__email">*Informujemy, że wyślemy tylko jednego maila z informacją o premierze.</p>
-        <a href="./private-politicy/private-politicy.html" class="premiere__private-politycy" target="_blank">Polityka
-          prywatności</a>
-      </section>
-      <section id='id4'>
-        <div class="features__container">
-          <div class="row">
-            <div class="features__container--row">
-              <img class="features__photo" src="img/analysis-chart-cup.jpg" />
-            </div>
-            <div class="col-md-6 col-md-offset-1">
-              <div class="features__description">
-                <h2 class="features__description--title">Kontroluj swoje dokonania.</h2>
-                <hr class="features__description--hr">
-                <p class="features__description--text">Rejestruj swoją aktywność dzięki czytelnym wykresom Twoich
-                  postępów, co ułatwia analizę dotychczasowych wyników i pomaga w zaplanowaniu dalszych treningów.
-                </p>
-              </div>
-            </div>
-            <div class="features__container--row">
-              <img class="features__photo" src="img/beef-berries-breads.jpg" />
-            </div>
-            <div class="col-md-6 col-md-offset-1">
-              <div class="features__description">
-                <h2 class="features__description--title">Trzymaj swoje ulubione przepisy w jednym miejscu.</h2>
-                <hr class="features__description--hr">
-                <p class="features__description--text">Zapisuj swoje przepisy na każdy dzień tygodnia aby móc je oceniać
-                  i dzielić się nimi z Twoim trenerem.
-                </p>
-              </div>
-            </div>
-            <div class="features__container--row">
-              <img class="features__photo" src="img/brainstorming.jpg" />
-            </div>
-            <div class="col-md-6 col-md-offset-1">
-              <div class="features__description">
-                <h2 class="features__description--title">Bądź w kontakcie ze swoim trenerem.</h2>
-                <hr class="features__description--hr">
-                <p class="features__description--text">Nie czekaj na spotkanie z trenem. Dzięki udostępnieniu swoich
-                  postępów, zawsze możesz liczyć na komentarz i analizę ekspertów.
-                </p>
-              </div>
-            </div>
-            <div class="features__container--row">
-              <img class="features__photo" src="img/action-athlete-effor.jpg" />
-            </div>
-            <div class="col-md-6 col-md-offset-1">
-              <div class="features__description">
-                <h2 class="features__description--title">Nie trać motywacji.</h2>
-                <hr class="features__description--hr">
-                <p class="features__description--text">Otrzymuj punkty za zrealizowanie swojego planu. Pokaż swoje
-                  wyniki na social media!
-                </p>
-              </div>
-            </div>
+          <div class="features__container--row">
+            <img class="features__photo" src="img/action-athlete-effor.jpg" />
           </div>
-
-        </div>
-      </section>
-
-      <section id='id5' class="harmony-team padding-lg container-fluid">
-        <div class="row heading heading-icon">
-          <h2 class="section-name__team">POZNAJ<br>HarmonyTeam</h2>
-        </div>
-        <div class="authors row">
-          <div class="col-12 col-md-4 col-lg-4 col-xl-3">
-            <div class="authors__author equal-hight">
-              <figure id="am"><img src="img/angelikamaciazek.jpg" class="img-responsive author__img slide-fwd-center"
-                  alt=""></figure>
-              <h3 class="author__name">Angelika<br>Maciążek</h3>
-              <p class="author__position">Junior Front-End Developer</p>
-              <div class="follow-us clearfix">
-                <a class="author__socialmedialink" href="https://www.facebook.com/angelika.maciazek" target="_blank"><i
-                    class="author__socialmediaicon fab fa-facebook"></i></a>
-                <a class="author__socialmedialink" href="https://www.instagram.com/maangelika/" target="_blank"><i
-                    class="author__socialmediaicon fab fa-instagram"></i></a>
-                <a class="author__socialmedialink" href="https://github.com/angelikamaciazek" target="_blank"><i
-                    class="author__socialmediaicon fab fa-github"></i></a>
-                <a class="author__socialmedialink"
-                  href="https://www.linkedin.com/in/angelika-maci%C4%85%C5%BCek-97665018a" target="_blank"><i
-                    class="author__socialmediaicon fab fa-linkedin"></i></a>
-                <a class="author__socialmedialink" href="mailto:maciazekangelika@gmail.com" target="_blank"><i
-                    class="author__socialmediaicon fas fa-envelope"></i></a>
-
-              </div>
-              <a class="author__link" href="https://angelikamaciazek.github.io/" target="_blank">angelikamaciazek.pl</a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-4 col-xl-3">
-            <div class="authors__author equal-hight">
-              <figure id="br"><img src="img/beatarudzka.jpg.jpg" class="img-responsive author__img" alt="">
-              </figure>
-              <h3 class="author__name">Beata<br>Rudzka</h3>
-              <p class="author__position">Junior Front-End Developer</p>
-              <div class="follow-us clearfix">
-                <a class="author__socialmedialink" class="author__socialmedialink"
-                  href="https://www.facebook.com/beata.skiba.792"><i
-                    class="author__socialmediaicon fab fa-facebook"></i></a>
-                <a class="author__socialmedialink" href="https://github.com/beatarudzka" target="_blank"><i
-                    class="author__socialmediaicon fab fa-github"></i></a>
-                <a class="author__socialmedialink" href="https://www.linkedin.com/in/beata-rudzka" target="_blank"><i
-                    class="author__socialmediaicon fab fa-linkedin"></i></a>
-                <a class="author__socialmedialink" href="mailto:beatarudzka89@gmail.com" target="_blank"><i
-                    class="author__socialmediaicon fas fa-envelope"></i></a>
-              </div>
-              <a class="author__link" href="https://beatarudzka.github.io/" target="_blank">beatarudzka.pl</a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-4 col-xl-3">
-            <div class="authors__author equal-hight">
-              <figure id="aw"><img src="img/adamwitzberg.jpg" class="img-responsive author__img" alt=""></figure>
-              <h3 class="author__name">Adam<br>Witzberg</h3>
-              <p class="author__position">Junior Front-End Developer</p>
-              <div class="follow-us clearfix">
-                <a class="author__socialmedialink" href="https://www.facebook.com/adam.witzberg" target="_blank"><i
-                    class="author__socialmediaicon fab fa-facebook"></i></a>
-                <a class="author__socialmedialink" href="https://github.com/AdamWitzb" target="_blank"><i
-                    class="author__socialmediaicon fab fa-github"></i></a>
-                <a class="author__socialmedialink" href="https://www.linkedin.com/in/adam-witzberg-56655818a/"
-                  target="_blank"><i class="author__socialmediaicon fab fa-linkedin"></i></a>
-                <a class="author__socialmedialink" href="mailto:a.witzberg@gmail.com" target="_blank"><i
-                    class="author__socialmediaicon fas fa-envelope"></i></a>
-              </div>
-              <a class="author__link" href="https://adamwitz.github.io/" target="_blank">adamwitzberg.pl</a>
-            </div>
-          </div>
-      </section>
-      <section>
-
-        <div id='id6' class="sliderwrap">
-          <div class="sliderwrap__wrap">
-            <div class="sliderblock__wrap">
-              <div class="sliderblock--slider">
-                <a class="sliderblock--prevarrow">&laquo;</a>
-                <a class="sliderblock--nextarrow">&raquo;</a>
-                <ul class="sliderblock__list">
-                  <li class="sliderblock__list--pict"><img src="img/adult-architecture.jpg" alt="Images1" /></li>
-                  <li class="sliderblock__list--pict"><img src="img/adults-coffee-colleagues.jpg" alt="Images1" /></li>
-                  <li class="sliderblock__list--pict"><img src="img/antioxidant-background-berries.jpg" alt="Images1" />
-                  </li>
-                  <li class="sliderblock__list--pict"><img src="img/antioxidant-background-berries.jpg" alt="Images1" />
-                  </li>
-                </ul>
-              </div>
-              <div class="clear"></div>
+          <div class="col-md-6 col-md-offset-1">
+            <div class="features__description">
+              <h2 class="features__description--title">Nie trać motywacji.</h2>
+              <hr class="features__description--hr">
+              <p class="features__description--text">Otrzymuj punkty za zrealizowanie swojego planu. Pokaż swoje
+                wyniki na social media!
+              </p>
             </div>
           </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-        <script src="js/global.js" type="text/javascript"></script>
-      </section>
-      <section>
-        <div class="alert text-center cookiealert" role="alert">
-          <b>Lubisz ciasteczka?</b> &#x1F36A; Na naszej stronie używamy ciasteczka. <a href="https://cookiesandyou.com/"
-            target="_blank">Dowiedz się więcej.</a>
 
-          <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
-            Zgadzam się.
-          </button>
-        </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
-      </section>
-      <section class="footer">
-        <div class="footer__container">
-          <div class="row">
-            <div class="col-lg-12">
-              <p class="footer__container--text">Copyright &copy; Harmony Team. All Rights Reserved. Data ostatniej
-                publikacji 07/2019</p>
+      </div>
+    </section>
+
+    <section id='team' class="harmony-team padding-lg container-fluid">
+      <div class="row heading heading-icon">
+        <h2 class="section-name__team">POZNAJ<br>HarmonyTeam</h2>
+      </div>
+      <div class="authors row">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-3">
+          <div class="authors__author equal-hight">
+            <figure id="am"><img src="img/angelikamaciazek.jpg" class="img-responsive author__img slide-fwd-center"
+                alt=""></figure>
+            <h3 class="author__name">Angelika<br>Maciążek</h3>
+            <p class="author__position">Junior Front-End Developer</p>
+            <div class="follow-us clearfix">
+              <a class="author__socialmedialink" href="https://www.facebook.com/angelika.maciazek" target="_blank"><i
+                  class="author__socialmediaicon fab fa-facebook"></i></a>
+              <a class="author__socialmedialink" href="https://www.instagram.com/maangelika/" target="_blank"><i
+                  class="author__socialmediaicon fab fa-instagram"></i></a>
+              <a class="author__socialmedialink" href="https://github.com/angelikamaciazek" target="_blank"><i
+                  class="author__socialmediaicon fab fa-github"></i></a>
+              <a class="author__socialmedialink"
+                href="https://www.linkedin.com/in/angelika-maci%C4%85%C5%BCek-97665018a" target="_blank"><i
+                  class="author__socialmediaicon fab fa-linkedin"></i></a>
+              <a class="author__socialmedialink" href="mailto:maciazekangelika@gmail.com" target="_blank"><i
+                  class="author__socialmediaicon fas fa-envelope"></i></a>
+
             </div>
+            <a class="author__link" href="https://angelikamaciazek.github.io/" target="_blank">angelikamaciazek.pl</a>
           </div>
         </div>
-      </section>
-      <script src="button-up.js"></script>
-      <script src="slider.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    </main>
+        <div class="col-12 col-md-4 col-lg-4 col-xl-3">
+          <div class="authors__author equal-hight">
+            <figure id="br"><img src="img/beatarudzka.jpg.jpg" class="img-responsive author__img" alt="">
+            </figure>
+            <h3 class="author__name">Beata<br>Rudzka</h3>
+            <p class="author__position">Junior Front-End Developer</p>
+            <div class="follow-us clearfix">
+              <a class="author__socialmedialink" class="author__socialmedialink"
+                href="https://www.facebook.com/beata.skiba.792"><i
+                  class="author__socialmediaicon fab fa-facebook"></i></a>
+              <a class="author__socialmedialink" href="https://github.com/beatarudzka" target="_blank"><i
+                  class="author__socialmediaicon fab fa-github"></i></a>
+              <a class="author__socialmedialink" href="https://www.linkedin.com/in/beata-rudzka" target="_blank"><i
+                  class="author__socialmediaicon fab fa-linkedin"></i></a>
+              <a class="author__socialmedialink" href="mailto:beatarudzka89@gmail.com" target="_blank"><i
+                  class="author__socialmediaicon fas fa-envelope"></i></a>
+            </div>
+            <a class="author__link" href="https://beatarudzka.github.io/" target="_blank">beatarudzka.pl</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 col-xl-3">
+          <div class="authors__author equal-hight">
+            <figure id="aw"><img src="img/adamwitzberg.jpg" class="img-responsive author__img" alt=""></figure>
+            <h3 class="author__name">Adam<br>Witzberg</h3>
+            <p class="author__position">Junior Front-End Developer</p>
+            <div class="follow-us clearfix">
+              <a class="author__socialmedialink" href="https://www.facebook.com/adam.witzberg" target="_blank"><i
+                  class="author__socialmediaicon fab fa-facebook"></i></a>
+              <a class="author__socialmedialink" href="https://github.com/AdamWitzb" target="_blank"><i
+                  class="author__socialmediaicon fab fa-github"></i></a>
+              <a class="author__socialmedialink" href="https://www.linkedin.com/in/adam-witzberg-56655818a/"
+                target="_blank"><i class="author__socialmediaicon fab fa-linkedin"></i></a>
+              <a class="author__socialmedialink" href="mailto:a.witzberg@gmail.com" target="_blank"><i
+                  class="author__socialmediaicon fas fa-envelope"></i></a>
+            </div>
+            <a class="author__link" href="https://adamwitz.github.io/" target="_blank">adamwitzberg.pl</a>
+          </div>
+        </div>
+    </section>
+    <section>
+
+      <div class="sliderwrap">
+        <div class="sliderwrap__wrap">
+          <div class="sliderblock__wrap">
+            <div class="sliderblock--slider">
+              <a class="sliderblock--prevarrow">&laquo;</a>
+              <a class="sliderblock--nextarrow">&raquo;</a>
+              <ul class="sliderblock__list">
+                <li class="sliderblock__list--pict"><img src="img/adult-architecture.jpg" alt="Images1" /></li>
+                <li class="sliderblock__list--pict"><img src="img/adults-coffee-colleagues.jpg" alt="Images1" /></li>
+                <li class="sliderblock__list--pict"><img src="img/antioxidant-background-berries.jpg" alt="Images1" />
+                </li>
+                <li class="sliderblock__list--pict"><img src="img/antioxidant-background-berries.jpg" alt="Images1" />
+                </li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+      <script src="js/global.js" type="text/javascript"></script>
+    </section>
+    <section>
+      <div class="alert text-center cookiealert" role="alert">
+        <b>Lubisz ciasteczka?</b> &#x1F36A; Na naszej stronie używamy ciasteczka. <a href="https://cookiesandyou.com/"
+          target="_blank">Dowiedz się więcej.</a>
+
+        <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+          Zgadzam się.
+        </button>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+    </section>
+    <section id='last' class="footer">
+      <div class="footer__container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="footer__container--text">Copyright &copy; Harmony Team. All Rights Reserved. Data ostatniej
+              publikacji 07/2019</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="button-up.js"></script>
+    <script src="slider.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  </main>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

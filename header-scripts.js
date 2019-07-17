@@ -15,34 +15,31 @@ $(document).ready(function () {
 });
 
 const windowTop = $(window).scroll(function () {
+  const scrollTop = $(window).scrollTop()
   const scroll = $(window).scrollTop() + $(window).height()
 
-  const topId1 = $('#id1').offset().top
-  const topId2 = $('#id2').offset().top
-  const topId3 = $('#id3').offset().top
-  const topId4 = $('#id4').offset().top
-  const topId5 = $('#id5').offset().top
-  const topId6 = $('#id6').offset().top
+  const top0 = $('#hero').offset().top
+  const top1 = $('#appinfo').offset().top
+  const top2 = $('#features').offset().top
+  const top3 = $('#team').offset().top
+  const top4 = $('#last').offset().top
 
 
-  if (scroll < topId2 && topId3 > scroll) {
-    $('#a2').removeClass('current-pos')
-    $('#a1').addClass('current-pos')
-  } else if (scroll < topId3 && topId4 > scroll) {
-    $('#a3').removeClass('current-pos')
-    $('#a1').removeClass('current-pos')
-    $('#a2').addClass('current-pos')
-  } else if (scroll < topId4 && topId5 > scroll) {
-    $('#a4').removeClass('current-pos')
-    $('#a2').removeClass('current-pos')
-    $('#a3').addClass('current-pos')
-  } else if (scroll < topId5 && topId6 > scroll) {
-    $('#a5').removeClass('current-pos')
-    $('#a3').removeClass('current-pos')
-    $('#a4').addClass('current-pos')
-  } else if (scroll < topId6) {
-    $('#a4').removeClass('current-pos')
-    $('#a5').addClass('current-pos')
+  if (scrollTop == 0) {
+    $('#appinfo-link').removeClass('current-pos')
+  } else if (scroll < top1 && top2 > scroll) {
+    $('#appinfo-link').addClass('current-pos')
+    $('#features-link').removeClass('current-pos')
+  } else if (scroll < top2 && top3 > scroll) {
+    $('#features-link').addClass('current-pos')
+    $('#appinfo-link').removeClass('current-pos')
+    $('#team-link').removeClass('current-pos')
+  } else if (scroll < top3 && top4 > scroll) {
+    $('#team-link').addClass('current-pos')
+    $('#features-link').removeClass('current-pos')
+    $('#last-link').removeClass('current-pos')
+  } else if (scroll < top4) {
+    $('#last-link').addClass('current-pos')
+    $('#team-link').removeClass('current-pos')
   }
-
 })
