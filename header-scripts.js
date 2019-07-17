@@ -18,8 +18,7 @@ const windowTop = $(window).scroll(function () {
   const scrollTop = $(window).scrollTop()
   const scroll = $(window).scrollTop() + $(window).height()
 
-  const top0 = $('#hero').offset().top
-  const top1 = $('#appinfo').offset().top
+  const top1 = $('#appinfo1').offset().top
   const top2 = $('#features').offset().top
   const top3 = $('#team').offset().top
   const top4 = $('#last').offset().top
@@ -42,4 +41,27 @@ const windowTop = $(window).scroll(function () {
     $('#last-link').addClass('current-pos')
     $('#team-link').removeClass('current-pos')
   }
+})
+
+$("#appinfo-link").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#appinfo").offset().top},
+      'slow');
+})
+
+$("#features-link").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#features").offset().top},
+      'slow');
+})
+
+$("#team-link").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#team").offset().top},
+      'slow');
+})
+$("#last-link").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#last").offset().top},
+      'slow');
 })
