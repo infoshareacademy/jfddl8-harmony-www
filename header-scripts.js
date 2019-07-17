@@ -14,18 +14,17 @@ $(document).ready(function () {
 
 });
 
-
 const windowTop = $(window).scroll(function () {
-  const scroll = $(window).scrollTop()+$(window).heigth
+  const scroll = $(window).scrollTop()+$(window).height()
 
-  console.log(scroll)
-  const id1 = document.getElementById('id1')
-  const id2 = document.getElementById('id2')
-  const id3 = document.getElementById('id3')
-  const id4 = document.getElementById('id4')
-  const id5 = document.getElementById('id5')
-  const id6 = document.getElementById('id6')
+  const id1 = $('#id1').offset()
+  const id2 = $('#id2').offset()
+  const id3 = $('#id3').offset()
+  const id4 = $('#id4').offset()
+  const id5 = $('#id5').offset()
+  const id6 = $('#id6').offset()
 
-
-
+  if( id2.top>scroll){
+    $('#id2')
+  }
 })
