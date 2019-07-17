@@ -15,16 +15,34 @@ $(document).ready(function () {
 });
 
 const windowTop = $(window).scroll(function () {
-  const scroll = $(window).scrollTop()+$(window).height()
+  const scroll = $(window).scrollTop() + $(window).height()
 
-  const id1 = $('#id1').offset()
-  const id2 = $('#id2').offset()
-  const id3 = $('#id3').offset()
-  const id4 = $('#id4').offset()
-  const id5 = $('#id5').offset()
-  const id6 = $('#id6').offset()
+  const topId1 = $('#id1').offset().top
+  const topId2 = $('#id2').offset().top
+  const topId3 = $('#id3').offset().top
+  const topId4 = $('#id4').offset().top
+  const topId5 = $('#id5').offset().top
+  const topId6 = $('#id6').offset().top
 
-  if( id2.top>scroll){
-    $('#id2')
+
+  if (scroll < topId2 && topId3 > scroll) {
+    $('#a2').removeClass('current-pos')
+    $('#a1').addClass('current-pos')
+  } else if (scroll < topId3 && topId4 > scroll) {
+    $('#a3').removeClass('current-pos')
+    $('#a1').removeClass('current-pos')
+    $('#a2').addClass('current-pos')
+  } else if (scroll < topId4 && topId5 > scroll) {
+    $('#a4').removeClass('current-pos')
+    $('#a2').removeClass('current-pos')
+    $('#a3').addClass('current-pos')
+  } else if (scroll < topId5 && topId6 > scroll) {
+    $('#a5').removeClass('current-pos')
+    $('#a3').removeClass('current-pos')
+    $('#a4').addClass('current-pos')
+  } else if (scroll < topId6) {
+    $('#a4').removeClass('current-pos')
+    $('#a5').addClass('current-pos')
   }
+
 })
