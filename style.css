@@ -307,92 +307,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.clearfix {
-    *zoom: 1;
-}
-
-.clearfix:before,
-.clearfix:after {
-    display: block;
-    content: "";
-    line-height: 0;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clear {
-    clear: both;
-}
-
-.sliderwrap__wrap {
-    width: 1024px;
-    margin: 0 auto;
-}
-
-.sliderblock__wrap {
-    margin-bottom: 20px;
-}
-
-.sliderblock--slider {
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    width: 1024px;
-    height: 400px;
-    text-align: center;
-    background: #2a2a2a;
-}
-
-.sliderblock__list {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 400px;
-}
-
-.sliderblock__list--pict {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 1024px;
-    height: 400px;
-}
-
-.sliderblock--prevarrow,
-.sliderblock--nextarrow {
-    position: absolute;
-    top: 50%;
-    z-index: 999;
-    display: block;
-    width: 50px;
-    height: 22px;
-    padding: 14px 0;
-    margin-top: -25px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px;
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.sliderblock--nextarrow:hover,
-.sliderblock--prevarrow:hover {
-    opacity: 1;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-
-.sliderblock--nextarrow {
-    right: 0;
-}
-
 .rotate {
     animation-name: rotation;
     animation-duration: 1.5s;
@@ -417,19 +331,19 @@ html {
 }
 
 .features__container {
-    margin: 90px;
+    margin: 10%;
 }
 
 .features {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 50px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-top: 10%;
 }
 
 .features__description {
-    text-align: right;
-    padding: 50px;
-    margin: 50px;
+    text-align: center;
+    margin: auto 0;
+    padding: 2%;
 }
 
 .footer__container {
@@ -447,7 +361,7 @@ html {
 }
 
 .features__container--row {
-    margin: 10px;
+    margin: 3%;
 }
 
 .features__photo {
