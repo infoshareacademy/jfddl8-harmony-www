@@ -398,17 +398,3 @@ html {
     text-align: center;
     height: 2%;
 }
-
-.footer__container--text {
-    font-size: 1rem;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.features__container--row {
-    margin: 3%;
-}
-
-.features__photo {
-    min-width: 10%;
-}
