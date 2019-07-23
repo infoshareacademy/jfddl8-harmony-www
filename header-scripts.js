@@ -20,8 +20,8 @@ const windowTop = $(window).scroll(function () {
 
   const top1 = $('#appinfo1').offset().top
   const top2 = $('#features').offset().top
-  const top3 = $('#team').offset().top
-  const top4 = $('#last').offset().top
+  const top3 = $('#carusel').offset().top
+  const top4 = $('#team').offset().top
 
 
   if (scrollTop == 0) {
@@ -32,14 +32,14 @@ const windowTop = $(window).scroll(function () {
   } else if (scroll < top2 && top3 > scroll) {
     $('#features-link').addClass('current-pos')
     $('#appinfo-link').removeClass('current-pos')
-    $('#team-link').removeClass('current-pos')
+    $('#carusel-link').removeClass('current-pos')
   } else if (scroll < top3 && top4 > scroll) {
-    $('#team-link').addClass('current-pos')
+    $('#carusel-link').addClass('current-pos')
     $('#features-link').removeClass('current-pos')
-    $('#last-link').removeClass('current-pos')
-  } else if (scroll < top4) {
-    $('#last-link').addClass('current-pos')
     $('#team-link').removeClass('current-pos')
+  } else if (scroll < top4) {
+    $('#team-link').addClass('current-pos')
+    $('#carusel-link').removeClass('current-pos')
   }
 })
 
@@ -55,13 +55,13 @@ $("#features-link").click(function() {
       'slow');
 })
 
+$("#carusel-link").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#carusel").offset().top},
+      'slow');
+})
 $("#team-link").click(function() {
   $('html,body').animate({
       scrollTop: $("#team").offset().top},
-      'slow');
-})
-$("#last-link").click(function() {
-  $('html,body').animate({
-      scrollTop: $("#last").offset().top},
       'slow');
 })

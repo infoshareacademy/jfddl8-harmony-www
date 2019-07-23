@@ -33,8 +33,8 @@
       <p>Tu będzie logo</p>
       <a id='appinfo-link' class="mainmenu-item__link" id='opcja1' href="#">Opcja 1</a>
       <a id='features-link' class="mainmenu-item__link" id='opcja2' href="#">Opcja 2</a>
-      <a id='team-link' class="mainmenu-item__link" id='opcja3' href="#">Opcja 3</a>
-      <a id='last-link' class="mainmenu-item__link" id='opcja4' href="#">Opcja 4</a>
+      <a id='carusel-link' class="mainmenu-item__link" id='opcja3' href="#">Opcja 3</a>
+      <a id='team-link' class="mainmenu-item__link" id='opcja4' href="#">Opcja 4</a>
     </section>
   </div>
 
@@ -57,7 +57,7 @@
   </section>
 
   <main>
-    <section class="app-information container-fluid">
+    <section id='appinfo' class="app-information container-fluid">
       <div class="app-information__background">
         <div class="row">
           <h2 class="col-12 section-name">Jedyna aplikacja na rynku, w której:</h2>
@@ -95,7 +95,7 @@
         </div>
     </section>
 
-    <section class="premiere">
+    <section id='appinfo1' class="premiere">
       <h2 class="section-name">Nie możesz doczekać się premiery?</h2>
       <p class="premiere__text">Poinformujemy Cię o terminie!</p>
       <p class="premiere__text">Zapisz się już dziś i odbierz nagrodę!</p>
@@ -110,7 +110,7 @@
         prywatności</a>
     </section>
     <section>
-      <div class="features__container">
+      <div id='features' class="features__container">
         <div class="row">
           <div class="features__container--row">
             <img class="features__photo" src="img/analysis-chart-cup.jpg" />
@@ -201,7 +201,7 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid">
+    <section id='carusel' class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -234,7 +234,7 @@
       </div>
       </div>
     </section>
-    <section class="harmony-team padding-lg container-fluid">
+    <section id='team' class="harmony-team padding-lg container-fluid">
       <div class="row heading heading-icon">
         <h2 class="section-name__team">POZNAJ<br>HarmonyTeam</h2>
       </div>
@@ -325,9 +325,7 @@
     </section>
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha384-mlceH9HlqLp7GMKHrj5Ara1+LvdTZVMx4S1U43/NxCvAkzIo8WJ0FE7duLel3wVo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -339,6 +337,7 @@
   <script src="./js/avatar-animations.js"></script>
   <script src="./js/button-up.js"></script>
   <script src="./js/cookie.js"></script>
+  <script src="./header-scripts.js"></script>
 
 </body>
 
