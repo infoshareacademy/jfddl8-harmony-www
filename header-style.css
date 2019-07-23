@@ -51,9 +51,12 @@ div.hero-item__main-content {
 	.hero-item__main-content {
 		display: none;
 	}
+	p.temp{
+		display: none;
+	}
 }
 
-@media(max-width: 360px) {
+@media(max-width: 370px) {
 	#global-nav {
 		display: none;
 	}
