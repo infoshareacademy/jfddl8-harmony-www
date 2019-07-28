@@ -8,6 +8,7 @@ $(document).ready(function () {
       $('#global-nav').addClass('scrolled-nav');
     } else if (scrollTop < 100) {
       $('#global-nav').removeClass('scrolled-nav');
+      $('#slider-link').removeClass('current-pos');
     }
 
   });
@@ -15,37 +16,34 @@ $(document).ready(function () {
 });
 
 const windowTop = $(window).scroll(function () {
-  const scrollTop = $(window).scrollTop()
-  const scroll = $(window).scrollTop() + $(window).height()
+  const scroll = $(window).scrollTop() 
 
-  const top1 = $('#appinfo1').offset().top
+  const top1 = $('#slider').offset().top
   const top2 = $('#features').offset().top
-  const top3 = $('#carusel').offset().top
+  const top3 = $('#premiere').offset().top
   const top4 = $('#team').offset().top
 
 
-  if (scrollTop == 0) {
-    $('#appinfo-link').removeClass('current-pos')
-  } else if (scroll < top1 && top2 > scroll) {
-    $('#appinfo-link').addClass('current-pos')
+  if (scroll <= top1 && top2 > scroll) {
+    $('#slider-link').addClass('current-pos')
     $('#features-link').removeClass('current-pos')
   } else if (scroll < top2 && top3 > scroll) {
     $('#features-link').addClass('current-pos')
-    $('#appinfo-link').removeClass('current-pos')
-    $('#carusel-link').removeClass('current-pos')
+    $('#slider-link').removeClass('current-pos')
+    $('#premiere-link').removeClass('current-pos')
   } else if (scroll < top3 && top4 > scroll) {
-    $('#carusel-link').addClass('current-pos')
+    $('#premiere-link').addClass('current-pos')
     $('#features-link').removeClass('current-pos')
     $('#team-link').removeClass('current-pos')
   } else if (scroll < top4) {
     $('#team-link').addClass('current-pos')
-    $('#carusel-link').removeClass('current-pos')
+    $('#premiere-link').removeClass('current-pos')
   }
 })
 
-$("#appinfo-link").click(function() {
+$("#slider-link").click(function() {
   $('html,body').animate({
-      scrollTop: $("#appinfo").offset().top},
+      scrollTop: $("#slider").offset().top},
       'slow');
 })
 
@@ -55,9 +53,9 @@ $("#features-link").click(function() {
       'slow');
 })
 
-$("#carusel-link").click(function() {
+$("#premiere-link").click(function() {
   $('html,body').animate({
-      scrollTop: $("#carusel").offset().top},
+      scrollTop: $("#premiere").offset().top},
       'slow');
 })
 $("#team-link").click(function() {
@@ -65,3 +63,24 @@ $("#team-link").click(function() {
       scrollTop: $("#team").offset().top},
       'slow');
 })
+
+
+$( document ).ready(function() {
+
+  $( ".mini-nav__cross" ).hide();
+  $( ".mini-nav__list" ).hide();
+  $( ".mini-nav__burger" ).click(function() {
+  $( ".mini-nav__list" ).slideToggle( "slow", function() {
+  $( ".mini-nav__burger" ).hide();
+  $( ".mini-nav__cross" ).show();
+  });
+  });
+  
+  $( ".mini-nav__cross" ).click(function() {
+  $( ".mini-nav__list" ).slideToggle( "slow", function() {
+  $( ".mini-nav__cross" ).hide();
+  $( ".mini-nav__burger" ).show();
+  });
+  });
+  
+  });
