@@ -16,7 +16,7 @@ $(document).ready(function () {
 });
 
 const windowTop = $(window).scroll(function () {
-  const scroll = $(window).scrollTop() 
+  const scroll = $(window).scrollTop()
 
   const top1 = $('#slider').offset().top
   const top2 = $('#features').offset().top
@@ -41,46 +41,31 @@ const windowTop = $(window).scroll(function () {
   }
 })
 
-$("#slider-link").click(function() {
+$(".mainmenu-item__link").click(function () {
+  const link = '#' + $(this).attr('data-link')
   $('html,body').animate({
-      scrollTop: $("#slider").offset().top},
-      'slow');
-})
-
-$("#features-link").click(function() {
-  $('html,body').animate({
-      scrollTop: $("#features").offset().top},
-      'slow');
-})
-
-$("#premiere-link").click(function() {
-  $('html,body').animate({
-      scrollTop: $("#premiere").offset().top},
-      'slow');
-})
-$("#team-link").click(function() {
-  $('html,body').animate({
-      scrollTop: $("#team").offset().top},
-      'slow');
+    scrollTop: $(link).offset().top
+  },
+    'slow');
 })
 
 
-$( document ).ready(function() {
+$(document).ready(function () {
 
-  $( ".mini-nav__cross" ).hide();
-  $( ".mini-nav__list" ).hide();
-  $( ".mini-nav__burger" ).click(function() {
-  $( ".mini-nav__list" ).slideToggle( "slow", function() {
-  $( ".mini-nav__burger" ).hide();
-  $( ".mini-nav__cross" ).show();
+  $(".mini-nav__cross").hide();
+  $(".mini-nav__list").hide();
+  $(".mini-nav__burger").click(function () {
+    $(".mini-nav__list").slideToggle("slow", function () {
+      $(".mini-nav__burger").hide();
+      $(".mini-nav__cross").show();
+    });
   });
+
+  $(".mini-nav__cross").click(function () {
+    $(".mini-nav__list").slideToggle("slow", function () {
+      $(".mini-nav__cross").hide();
+      $(".mini-nav__burger").show();
+    });
   });
-  
-  $( ".mini-nav__cross" ).click(function() {
-  $( ".mini-nav__list" ).slideToggle( "slow", function() {
-  $( ".mini-nav__cross" ).hide();
-  $( ".mini-nav__burger" ).show();
-  });
-  });
-  
-  });
+
+});

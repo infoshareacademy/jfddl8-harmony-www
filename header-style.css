@@ -1,19 +1,20 @@
-div.main-wrapper{
-	padding: 0px;
+.main-wrapper{
+	padding: 0;
 }
-
 .mini-nav {
 	display: none;
 }
 
-a.card-link, a.mainmenu-item__link {
+a.card-link, a.mainmenu-item__link, a.mini-nav__link {
 	color: #2a2a2a;
 	font-size: 20px;
 	font-weight: 500;
 	text-transform: uppercase;
 	border-bottom: 2px solid #d65a31;
 }
-
+ul{
+	list-style-type: none;
+}
 a.mainmenu-item__link:hover, a.card-link:hover {
 	color: #d65a31;
 	text-decoration: none;
@@ -23,7 +24,6 @@ a.mainmenu-item__link:hover, a.card-link:hover {
 	background-color: #eee;
 	height: 10%;
 	transition: 2s;
-	margin: 14px;
 }
 
 section.hero {
@@ -67,7 +67,6 @@ div.hero-item__main-content {
 	border:0;
 	font-size:1.4em;
 	font-weight:bold;
-	cursor:pointer;
 	outline:none;
 	z-index:10000000000000;
   }
@@ -82,7 +81,6 @@ div.hero-item__main-content {
 	font-size:3em;
 	line-height:65px;
 	font-weight:bold;
-	cursor:pointer;
 	outline:none;
 	z-index:10000000000000;
   }
