@@ -27,10 +27,10 @@ const paddle = {
 }
 
 function drawPaddle(){
-    ctx.fillStyle = "#2e3548";
+    ctx.fillStyle = "#393e46";
     ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height)
     
-    ctx.strokeStyle = "#ffcd05";
+    ctx.strokeStyle = "#393e46";
     ctx.strokeRect(paddle.x, paddle.y, paddle.width, paddle.height)
 }
 
@@ -70,10 +70,10 @@ function drawBall(){
     ctx.beginPath();
     
     ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2)
-    ctx.fillStyle = "#ffcd05"
+    ctx.fillStyle = "#eee"
     ctx.fill()
     
-    ctx.strokeStyle = "#2e3548"
+    ctx.strokeStyle = "#eee"
     ctx.stroke()
     
     ctx.closePath()
@@ -134,8 +134,8 @@ const brick = {
     offSetLeft : 20,
     offSetTop : 20,
     marginTop : 40,
-    fillColor : "#2e3548",
-    strokeColor : "#FFF"
+    fillColor : "#d65a31",
+    strokeColor : "#d65a31"
 }
 
 let bricks = []
