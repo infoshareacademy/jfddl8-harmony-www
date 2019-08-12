@@ -155,4 +155,19 @@ function createBricks(){
 
 createBricks()
 
+function drawBricks(){
+    for(let r = 0; r < brick.row; r++){
+        for(let c = 0; c < brick.column; c++){
+            let b = bricks[r][c]
+            if(b.status){
+                ctx.fillStyle = brick.fillColor
+                ctx.fillRect(b.x, b.y, brick.width, brick.height)
+                
+                ctx.strokeStyle = brick.strokeColor
+                ctx.strokeRect(b.x, b.y, brick.width, brick.height)
+            }
+        }
+    }
+}
+
 
