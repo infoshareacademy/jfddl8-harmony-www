@@ -297,5 +297,10 @@ restart.addEventListener("click", function(){
     location.reload()
 })
 
+function showYouWin(){
+    gameover.style.display = "block"
+    youwon.style.display = "block"
+}
+
 
 
