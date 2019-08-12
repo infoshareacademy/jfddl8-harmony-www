@@ -293,5 +293,9 @@ const youwin = document.getElementById("youwin")
 const youlose = document.getElementById("youlose")
 const restart = document.getElementById("restart")
 
+restart.addEventListener("click", function(){
+    location.reload()
+})
+
 
 
