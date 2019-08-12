@@ -48,3 +48,33 @@ document.addEventListener("keydown", function(event){
         rightArrow = false
     }
  })
+
+ function movePaddle(){
+    if(rightArrow && paddle.x + paddle.width < cvs.width){
+        paddle.x += paddle.dx
+    }else if(leftArrow && paddle.x > 0){
+        paddle.x -= paddle.dx
+    }
+}
+
+const ball = {
+    x : cvs.width/2,
+    y : paddle.y - BALL_RADIUS,
+    radius : BALL_RADIUS,
+    speed : 4,
+    dx : 3 * (Math.random() * 2 - 1),
+    dy : -3
+}
+
+function drawBall(){
+    ctx.beginPath();
+    
+    ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2);
+    ctx.fillStyle = "#ffcd05";
+    ctx.fill();
+    
+    ctx.strokeStyle = "#2e3548";
+    ctx.stroke();
+    
+    ctx.closePath();
+}
