@@ -302,5 +302,8 @@ function showYouWin(){
     youwon.style.display = "block"
 }
 
-
+function showYouLose(){
+    gameover.style.display = "block"
+    youlose.style.display = "block"
+}
 
