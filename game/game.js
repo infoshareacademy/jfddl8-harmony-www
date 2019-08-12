@@ -194,4 +194,18 @@ function showGameStats(text, textX, textY, img, imgX, imgY){
     ctx.drawImage(img, imgX, imgY, width = 25, height = 25)
 }
 
+function draw(){
+    drawPaddle();
+    
+    drawBall();
+    
+    drawBricks();
+    
+    showGameStats(SCORE, 35, 25, SCORE_IMG, 5, 5);
+
+    showGameStats(LIFE, cvs.width - 25, 25, LIFE_IMG, cvs.width-55, 5); 
+
+    showGameStats(LEVEL, cvs.width/2, 25, LEVEL_IMG, cvs.width/2 - 30, 5);
+}
+
 
