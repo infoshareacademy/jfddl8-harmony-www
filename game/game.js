@@ -170,4 +170,28 @@ function drawBricks(){
     }
 }
 
+function ballBrickCollision(){
+    for(let r = 0; r < brick.row; r++){
+        for(let c = 0; c < brick.column; c++){
+            let b = bricks[r][c]
+            if(b.status){
+                if(ball.x + ball.radius > b.x && ball.x - ball.radius < b.x + brick.width && ball.y + ball.radius > b.y && ball.y - ball.radius < b.y + brick.height){
+                    BRICK_HIT.play()
+                    ball.dy = - ball.dy
+                    b.status = false
+                    SCORE += SCORE_UNIT
+                }
+            }
+        }
+    }
+}
+
+function showGameStats(text, textX, textY, img, imgX, imgY){
+    ctx.fillStyle = "#FFF"
+    ctx.font = "25px Righteous"
+    ctx.fillText(text, textX, textY)
+
+    ctx.drawImage(img, imgX, imgY, width = 25, height = 25)
+}
+
 
