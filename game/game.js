@@ -25,3 +25,11 @@ const paddle = {
     height : PADDLE_HEIGHT,
     dx :5
 }
+
+function drawPaddle(){
+    ctx.fillStyle = "#2e3548";
+    ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
+    
+    ctx.strokeStyle = "#ffcd05";
+    ctx.strokeRect(paddle.x, paddle.y, paddle.width, paddle.height);
+}
