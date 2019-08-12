@@ -17,3 +17,11 @@ const MAX_LEVEL = 3
 let GAME_OVER = false
 let leftArrow = false
 let rightArrow = false
+
+const paddle = {
+    x : cvs.width/2 - PADDLE_WIDTH/2,
+    y : cvs.height - PADDLE_MARGIN_BOTTOM - PADDLE_HEIGHT,
+    width : PADDLE_WIDTH,
+    height : PADDLE_HEIGHT,
+    dx :5
+}
