@@ -83,3 +83,28 @@ function moveBall(){
     ball.x += ball.dx
     ball.y += ball.dy
 }
+
+function ballWallCollision(){
+    if(ball.x + ball.radius > cvs.width || ball.x - ball.radius < 0){
+        ball.dx = - ball.dx
+        WALL_HIT.play()
+    }
+    
+    if(ball.y - ball.radius < 0){
+        ball.dy = -ball.dy
+        WALL_HIT.play()
+    }
+    
+    if(ball.y + ball.radius > cvs.height){
+        LIFE--
+        LIFE_LOST.play()
+        resetBall()
+    }
+}
+
+function resetBall(){
+    ball.x = cvs.width/2
+    ball.y = paddle.y - BALL_RADIUS
+    ball.dx = 3 * (Math.random() * 2 - 1)
+    ball.dy = -3
+}
