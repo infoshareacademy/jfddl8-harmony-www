@@ -28,8 +28,23 @@ const paddle = {
 
 function drawPaddle(){
     ctx.fillStyle = "#2e3548";
-    ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
+    ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height)
     
     ctx.strokeStyle = "#ffcd05";
-    ctx.strokeRect(paddle.x, paddle.y, paddle.width, paddle.height);
+    ctx.strokeRect(paddle.x, paddle.y, paddle.width, paddle.height)
 }
+
+document.addEventListener("keydown", function(event){
+    if(event.keyCode == 37){
+        leftArrow = true
+    }else if(event.keyCode == 39){
+        rightArrow = true
+    }
+ })
+ document.addEventListener("keyup", function(event){
+    if(event.keyCode == 37){
+        leftArrow = false
+    }else if(event.keyCode == 39){
+        rightArrow = false
+    }
+ })
