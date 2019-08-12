@@ -240,4 +240,21 @@ function levelUp(){
     }
 }
 
+unction update(){
+    movePaddle()
+    
+    moveBall()
+    
+    ballWallCollision()
+    
+    ballPaddleCollision()
+    
+    ballBrickCollision()
+    
+    gameOver()
+    
+    levelUp()
+}
+
+
 
