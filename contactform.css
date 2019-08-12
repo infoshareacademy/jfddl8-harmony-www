@@ -1,0 +1,110 @@
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+  }
+  .contact-form__group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact-form__input-wrap {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    margin: 5px;
+  }
+  .contact-form__input, .contact-form__textarea {
+    flex-grow: 1;
+    border: 0;
+    background: #222831;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    outline: 0;
+    border-radius: 10px;
+  }
+  .contact-form__input::-moz-selection, .contact-form__textarea::-moz-selection {
+    background: #d65a31;
+    color: #fff;
+  }
+  .contact-form__input::selection, .contact-form__textarea::selection {
+    background: #d65a31;
+    color: #fff;
+  }
+  .contact-form__input:focus ~ .contact-form__label, .contact-form__textarea:focus ~ .contact-form__label {
+    width: 100%;
+    transition: 0.4s;
+  }
+  .contact-form__textarea {
+    min-height: 150px;
+    padding: 20px;
+  }
+  .contact-form__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d65a31;
+    transition: 0.4s;
+  }
+  .contact-form__submit {
+    margin-left: auto;
+  }
+  
+  .button {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: #d65a31;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .button::after {
+    position: absolute;
+    height: 4px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    opacity: 0.18;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    left: 0;
+  }
+  .button:focus, .button:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .button:hover {
+    background-color: #222831;
+  }
+  .button:hover::after {
+    opacity: 0.22;
+  }
+  .button:active {
+    background-color: #d65a31;
+  }
+  .button:active::after {
+    opacity: 0.32;
+  }
+
+  .form-call {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  
