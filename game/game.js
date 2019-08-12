@@ -256,5 +256,19 @@ unction update(){
     levelUp()
 }
 
+function loop(){
+
+    ctx.drawImage(BG_IMG, 0, 0)
+    
+    draw()
+    
+    update()
+    
+    if(! GAME_OVER){
+        requestAnimationFrame(loop)
+    }
+}
+loop()
+
 
 
