@@ -52,6 +52,7 @@ div.hero-item.row {
 .hero-item__main {
 	margin-bottom: 0;
   width: 60%;
+  height: 70%;
   
 }
 
@@ -93,9 +94,8 @@ div.hero-item__main-content {
 	background-color: #d65a31;
 	border-radius: 10px;
 	font-size: 15px;
-	padding: 5px;
-	line-height: 50px;
-	height: 60px;
+	padding: 13px;
+	height: 50px;
 	width: 220px;
 	text-align: center;
 	letter-spacing: 1px;
@@ -103,8 +103,14 @@ div.hero-item__main-content {
 	text-transform: uppercase;
 	text-decoration: none;
   display: block;
+  margin: auto 0;
+}
 
-	
+.card-link:hover{
+  text-decoration: none;
+  background: #fff;
+  transition: 0.5s;
+  color: #222;
 }
 .card-text {
 	color: #fff;
@@ -135,9 +141,9 @@ div.hero-item__main-content {
 	#global-nav {
 		display: none;
 	}
-	#mini-nav{
+	/* #mini-nav{
 		display: block;
-	}
+	} */
 	.hero{
       height: 100%;
       text-align: center;
@@ -145,7 +151,7 @@ div.hero-item__main-content {
 
 	.hero-item__main{
 		width: 100%;
-		height: 50vh;
+		height: 100vh;
 		text-align: center;
 		margin: 0 auto;
 	}

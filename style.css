@@ -8,7 +8,14 @@
 body{
     overflow-x: hidden;
 }
-
+.game-link{
+    color: #d65a31;
+    text-transform: uppercase;
+}
+.game-link:hover{
+    text-decoration: none;
+    color: #222;
+}
 .section-name {
     width: 90%;
     color: #222831;
@@ -334,19 +341,17 @@ html {
   }
   
 .features__photo { 
-    grid-area: features__photo;
+    /* grid-area: features__photo; */
     width: 50%;
-    padding: 5%;
+    padding: 10px;
  }
   
 .feature__description--box { 
-    grid-area: feature__description--box;
+    /* grid-area: feature__description--box; */
     width: 50%;
-    padding: 5%;
+    padding: 10px;
  }
-.fetures-box{
-    width: 50%;
-}
+
 .features__container {
     margin: 10px 0;
     display: flex;
@@ -354,44 +359,63 @@ html {
     background: #222831;
     color: #fff;
 
+
 }
 
 .features__description {
  display: flex;
  flex-wrap: wrap;
  align-items: center;
- min-height: 300px;
+ width: 100%;
 }
 
 .features__photo{
     display: block;
-}
-.features__description--box{
-    float: left;
+    width: 50%;
 }
 
 .features__description--title {
-    padding: 0 0 5px 5px;
+    display: block;
     border-left: 6px solid #D65A31;
     letter-spacing: 2px;
     font-size: 20px;
+    width: 100%;
 }
 
 .features__description--text{
+    display: block;
     font-size: 14px;
 }
 
-@media (max-width: 900px)
+@media (max-width: 1300px)
 {
     .features__photo{
         width: 100%;
-        padding: 0% 15% 0 15%;
+        padding: 10px;
     }
 
-    .feature__description--box{
+    .feature__description{
         width: 100%;
         padding: 5% 15%;
         font-size: 15px;
+        float: none;
+    }
+    .feature__description--box{
+        width: 100%;
+    }
+    .features__description--title{
+        width: 100%;
+    }
+}
+@media (max-width: 1000px){
+    .features-box{
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px){
+    .slider {
+        display: none;
     }
 }
 

@@ -27,10 +27,10 @@ const paddle = {
 }
 
 function drawPaddle(){
-    ctx.fillStyle = "#393e46";
+    ctx.fillStyle = "#393e46"
     ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height)
     
-    ctx.strokeStyle = "#393e46";
+    ctx.strokeStyle = "#393e46"
     ctx.strokeRect(paddle.x, paddle.y, paddle.width, paddle.height)
 }
 
@@ -240,7 +240,7 @@ function levelUp(){
     }
 }
 
-unction update(){
+function update(){
     movePaddle()
     
     moveBall()
