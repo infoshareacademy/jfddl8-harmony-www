@@ -215,4 +215,29 @@ function gameOver(){
     }
 }
 
+function levelUp(){
+    let isLevelDone = true
+    
+    for(let r = 0; r < brick.row; r++){
+        for(let c = 0; c < brick.column; c++){
+            isLevelDone = isLevelDone && ! bricks[r][c].status
+        }
+    }
+    
+    if(isLevelDone){
+        WIN.play()
+        
+        if(LEVEL >= MAX_LEVEL){
+            showYouWin()
+            GAME_OVER = true
+            return
+        }
+        brick.row++;
+        createBricks()
+        ball.speed += 0.5
+        resetBall()
+        LEVEL++
+    }
+}
+
 
