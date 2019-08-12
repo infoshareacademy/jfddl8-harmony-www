@@ -108,3 +108,22 @@ function resetBall(){
     ball.dx = 3 * (Math.random() * 2 - 1)
     ball.dy = -3
 }
+
+function ballPaddleCollision(){
+    if(ball.x < paddle.x + paddle.width && ball.x > paddle.x && paddle.y < paddle.y + paddle.height && ball.y > paddle.y){
+        
+        PADDLE_HIT.play()
+
+        let collidePoint = ball.x - (paddle.x + paddle.width/2)
+
+        collidePoint = collidePoint / (paddle.width/2)
+
+        let angle = collidePoint * Math.PI/3
+            
+            
+        ball.dx = ball.speed * Math.sin(angle)
+        ball.dy = - ball.speed * Math.cos(angle)
+    }
+}
+
+
