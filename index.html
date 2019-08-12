@@ -24,65 +24,164 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" type="text/css" href="header-style.css" />
   <link rel="stylesheet" type="text/css" href="premiereform.css" />
+  <link rel="stylesheet" type="text/css" href="contactform.css" />
+  <link rel="stylesheet" type="text/css" href="hamburger.css" />
+
+
 </head>
 
 <body>
   <div class='container-fluid main-wrapper'>
     <section id="global-nav" class="mainmenu navbar fixed-top row justify-content-between">
-      <p class='temp'>Tu będzie logo</p>
-      <a data-link='slider' class="mainmenu-item__link" href="#">Opcja 1</a>
-      <a data-link='features' class="mainmenu-item__link" href="#">Opcja 2</a>
-      <a data-link='premiere' class="mainmenu-item__link" href="#">Opcja 3</a>
-      <a data-link='team' class="mainmenu-item__link" href="#">Opcja 4</a>
+      <a data-link='hero' class="mainmenu-item__link" href="#">Home</a>
+      <a data-link='features' class="mainmenu-item__link" href="#">O aplikacji</a>
+      <a data-link='slider' class="mainmenu-item__link" href="#">Recenzje</a>
+      <a data-link='premiere' class="mainmenu-item__link" href="#">Premiera</a>
+      <a data-link='contact' class="mainmenu-item__link" href="#">Kontakt</a>
     </section>
 
     <section id='mini-nav' class='mini-nav'>
-      <div class='mini-nav__container'>
-        <button class="mini-nav__burger">&#9776;</button>
-        <button class="mini-nav__cross">&#735;</button>
-      </div>
-      <div class='mini-nav__list'>
-        <ul>
-          <a data-link='slider' class="mainmenu-item__link" href="#">
-            <li>Opcja 1</li>
-          </a>
-          <a data-link='features' class="mainmenu-item__link" href="#">
-            <li>Opcja 2</li>
-          </a>
-          <a data-link='premiere' class="mainmenu-item__link" href="#">
-            <li>Opcja 3</li>
-          </a>
-          <a data-link='team' class="mainmenu-item__link" href="#">
-            <li>Opcja 4</li>
-          </a>
-        </ul>
-      </div>
+        <div class="burger">
+            <i class="fas fa-bars show active "></i>
+            <i class="fas fa-times active"></i>
+        </div>
+        <aside class="active">
+            <nav>
+              <ul>
+                <li><a data-link='hero' class="mainmenu-item__link-small" href="#">Home</a></li>
+                <li><a data-link='features' class="mainmenu-item__link-small" href="#">O aplikacji</a></li>
+                <li><a data-link='slider' class="mainmenu-item__link-small" href="#">Recenzje</a></li>
+                <li><a data-link='premiere' class="mainmenu-item__link-small" href="#">Premiera</a></li>
+                <li><a data-link='contact' class="mainmenu-item__link-small" href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </aside>
 
     </section>
 
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="hero-item row">
         <div class="hero-item__main col align-self-center">
-          <div class="hero-item__main-content card-body">
-            <h5 class="card-title">Move your FIT</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Zajebiaszcza aplikacja!</h6>
-            <p class="card-text">Ale to jest świetna apka.<br>
-              Czego to ona nie ma i nie robi. <br>
-              Dajcie spokój, lepszej nikt, nigdy nie zrobi. <br>
-              Nie ma szans, cześć i czapka.
+          <div class="hero-item__main-content">
+            <h1 class="card-subtitle mb-2">Zmieniamy </br>Twoje życie na lepsze.</h1>
+            <p class="card-text">
+              Przedstawiamy aplikację Move Your Fit.<br>
+              Trzymanie diety nigdy nie było tak proste!<br>
+              Korzystaj i ciesz się sylwetką, o której marzysz! 
             </p>
-            <a href="#" class="card-link">Linkacz</a>
-            <a href="#" class="card-link">Linkacz</a>
+            <a href="http://app.move-your-fit.jfddl8.is-academy.pl/" class="card-link">Sprawdź aplikację</a>
           </div>
+        </div>
+        <div class="hero-item__photo align-self-center">
+          <img class="hero-item__picture" src="img/phonewithlogo.png" alt="">
         </div>
       </div>
     </section>
-  </div>
+    </div>
 
-  <main>
+    <main>
 
+    <section class="app-information container-fluid">
+        <div class="row">
+          <h2 class="col-12 section-name">Jedyna aplikacja na rynku, w której:</h2>
+        </div>
+        <div class="main-box-app row">
+          <div class="box-app col-12 col-sm-6 col-xl-3">
+            <i class="box-app__icon fas fa-clipboard"></i>
+            <div class="box__about-app">
+              <p>Masz dostęp do dziennika postępów online</p>
+            </div>
+            <p class="box__about-app__description">Zapisujesz swój progres, sprawdzasz jak się zmieniasz!</p>
+          </div>
+          <div class="box-app col-12 col-sm-6 col-xl-3">
+            <i class="box-app__icon fas fa-comments"></i>
+            <div class="box__about-app">
+              <p>Dodajesz swoje przepisy i dzielisz się z innymi!</p>
+            </div>
+            <p class="box__about-app__description">Udostępniasz swoje pomysły na zdrowe dania, aby zainspirować innych!
+            </p>
+            </p>
+          </div>
+          <div class="box-app col-12 col-sm-6 col-xl-3">
+            <i class="box-app__icon fas fa-dumbbell"></i>
+            <div class="box__about-app">
+              <p>Dowiesz się jak jeść</p>
+            </div>
+            <p class="box__about-app__description">Plan dietetyczny masz dostępny zawsze przy sobie!</p>
+          </div>
+          <div class="box-app col-12 col-sm-6 col-xl-3">
+            <i class="box-app__icon fas fa-utensils"></i>
+            <div class="box__about-app">
+              <p>Masz dostęp do przepisów</p>
+            </div>
+            <p class="box__about-app__description">Już nigdy nie zabraknie Ci pomysłu na obiad!</p>
+          </div>
+    </section>
+
+    <section id='features' class="features__container">
+<div class="features-box">
+      <div class="features__description grid-container">
+        <img class="features__photo" src="img/analysis-chart-cup.jpg" />
+        <div class="feature__description--box
+        ">
+          <h2 class="features__description--title">Kontroluj swoje dokonania</h2>
+          <p class="features__description--text">Rejestruj swoją realizację dziennych celów, zapisuj swoje sukcesy.
+          </p>
+        </div>
+      </div>
+
+      <div class="features__description grid-container">
+        <img class="features__photo" src="img/alarm-alarm-clock-analog-280254 (1).jpg" />
+        <div class="feature__description--box">
+          <h2 class="features__description--title">Utrzymuj ciągłą motywację</h2>
+          <p class="features__description--text">Nie trać motywacji dzięki opcji przypominania o posiłkach.
+          </p>
+        </div>
+      </div>
+
+      <div class="features__description grid-container">
+        <img class="features__photo" src="img/adult-agenda-black-1543924 (1).jpg" />
+        <div class="feature__description--box">
+          <h2 class="features__description--title">Bądź na bieżąco ze swoim planem dietetycznym</h2>
+          <p class="features__description--text">Otrzymuj dostosowany do Ciebie plan dietetyczzzny na kolejny miesiąc od
+            swojego trenera.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="features-box">
+      <div class="features__description grid-container">
+        <img class="features__photo" src="img/blur-electronics-hand-174938 (1).jpg" />
+        <div class="feature__description--box">
+          <h2 class="features__description--title">Podziel się swoimi postępami ze znajomymi</h2>
+          <p class="features__description--text">Pochwal się swoimi wynikami na social media, pokaż znajomym swojego nowego siebie!
+          </p>
+        </div>
+      </div>
+
+      <div class="features__description grid-container">
+
+        <img class="features__photo" src="img/beef-berries-breads.jpg" />
+        <div class="feature__description--box">
+          <h2 class="features__description--title">Trzymaj swoje ulubione przepisy w jednym miejscu</h2>
+          <p class="features__description--text">Zapisuj swoje przepisy na każdy dzień tygodnia, wybierz listę swoich ulubionych!
+          </p>
+        </div>
+      </div>
+
+      <div class="features__description grid-container">
+
+        <img class="features__photo" src="img/brainstorming.jpg" />
+        <div class="feature__description--box">
+          <h2 class="features__description--title">Dodając przepisy pomagaj innym</h2>
+          <p class="features__description--text">Dodawaj przpisy w aplikacji aby wymieniać się z pozostałymi użytkownikami!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
     <section id="slider" class="slider">
-      <h2 class="section-name">Jakoś nazwana sekcja?</h2>
+      <h2 class="section-name">Co o nas mówią?</h2>
 
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -92,13 +191,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/slider/adult-architecture.jpg" alt="First slide">
+            <img class="d-block w-100" src="img/recenzja.png" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/slider/adults-coffee-colleagues.jpg" alt="Second slide">
+            <img class="d-block w-100" src="img/recenzja1.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/slider/antioxidant-background-berries.jpg" alt="Third slide">
+            <img class="d-block w-100" src="img/recenzja3.png" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -111,137 +210,17 @@
         </a>
       </div>
     </section>
-
-    <section class="app-information container-fluid">
-      <div class="app-information__background">
-        <div class="row">
-          <h2 class="col-12 section-name">Jedyna aplikacja na rynku, w której:</h2>
-        </div>
-        <div class="main-box-app row">
-          <div class="box-app col-12 col-sm-6 col-xl-3">
-            <i class="box-app__icon fas fa-clipboard"></i>
-            <div class="box__about-app">
-              <p>Masz dostęp do dziennika treningowego online</p>
-            </div>
-            <p class="box__about-app__description">Zapisujesz swoje postępy, sprawdzasz progres!</p>
-          </div>
-          <div class="box-app col-12 col-sm-6 col-xl-3">
-            <i class="box-app__icon fas fa-comments"></i>
-            <div class="box__about-app">
-              <p>Jesteś w stałym kontakcie z Twoim trenerem</p>
-            </div>
-            <p class="box__about-app__description">Masz pytanie? Potrzebujesz motywacji? Napisz do swojego trenera!
-            </p>
-            </p>
-          </div>
-          <div class="box-app col-12 col-sm-6 col-xl-3">
-            <i class="box-app__icon fas fa-dumbbell"></i>
-            <div class="box__about-app">
-              <p>Dowiesz się jak trenować</p>
-            </div>
-            <p class="box__about-app__description">Plan treningowy dostepny zawsze w Twoim smartfonie!</p>
-          </div>
-          <div class="box-app col-12 col-sm-6 col-xl-3">
-            <i class="box-app__icon fas fa-utensils"></i>
-            <div class="box__about-app">
-              <p>Masz dostęp do przepisów</p>
-            </div>
-            <p class="box__about-app__description">Już nigdy nie zabraknie Ci pomysłu na obiad!</p>
-          </div>
-        </div>
-    </section>
-
-    <section id='features' class="features__container">
-
-      <div class="features__description grid-container">
-        <img class="features__photo" src="img/analysis-chart-cup.jpg" />
-        <div class="feature__description--box
-        ">
-          <h2 class="features__description--title">Kontroluj swoje dokonania.</h2>
-          <p class="features__description--text">Rejestruj swoją aktywność dzięki czytelnym wykresom Twoich
-            postępów, co ułatwia analizę dotychczasowych wyników i pomaga w zaplanowaniu dalszych treningów.
-          </p>
-        </div>
-      </div>
-
-      <div class="features__description grid-container">
-        <img class="features__photo" src="img/alarm-alarm-clock-analog-280254 (1).jpg" />
-        <div class="feature__description--box">
-          <h2 class="features__description--title">Utrzymuj ciągłą motywację.</h2>
-          <p class="features__description--text">Nie trać motywacji dzięki opcji przypominania o posiłkach oraz
-            treningach.
-          </p>
-        </div>
-      </div>
-
-      <div class="features__description grid-container">
-        <img class="features__photo" src="img/adult-agenda-black-1543924 (1).jpg" />
-        <div class="feature__description--box">
-          <h2 class="features__description--title">Bądź na bieżąco ze swoim planem treningowym.</h2>
-          <p class="features__description--text">Otrzymuj dostosowany do Ciebie plan treningowy na kolejny tydzień od
-            swojego trenera.
-          </p>
-        </div>
-      </div>
-
-      <div class="features__description grid-container">
-        <img class="features__photo" src="img/blur-electronics-hand-174938 (1).jpg" />
-        <div class="feature__description--box">
-          <h2 class="features__description--title">Podziel się swoimi dokonaniami ze znajomymi.</h2>
-          <p class="features__description--text">Pochwal się swoimi wynikami na social media, generując wykresy swoich
-            ostatnich postępów.
-          </p>
-        </div>
-      </div>
-
-      <div class="features__description grid-container">
-
-        <img class="features__photo" src="img/beef-berries-breads.jpg" />
-        <div class="feature__description--box">
-          <h2 class="features__description--title">Trzymaj swoje ulubione przepisy w jednym miejscu.</h2>
-          <p class="features__description--text">Zapisuj swoje przepisy na każdy dzień tygodnia aby móc je oceniać i
-            dzielić się nimi z Twoim trenerem.
-          </p>
-        </div>
-      </div>
-
-      <div class="features__description grid-container">
-
-        <img class="features__photo" src="img/brainstorming.jpg" />
-        <div class="feature__description--box">
-          <h2 class="features__description--title">Bądź w kontakcie ze swoim trenerem.</h2>
-          <p class="features__description--text">Nie czekaj na spotkanie z trenem. Dzięki udostępnieniu swoich
-            postępów,
-            zawsze możesz liczyć na komentarz i analizę ekspertów.
-          </p>
-        </div>
-      </div>
-
-      <div class="features__description grid-container">
-
-        <img class="features__photo" src="img/action-athlete-effor.jpg" />
-        <div class="feature__description--box">
-          <h2 class="features__description--title">Nie trać motywacji.</h2>
-          <p id="premiere" class="features__description--text">Otrzymuj punkty za zrealizowanie swojego planu. Pokaż
-            swoje
-            wyniki na
-            social media!
-          </p>
-        </div>
-      </div>
-
-    </section>
-    <section class='premiere'>
+    <section id="premiere" class='premiere'>
       <h2 class="section-name">Nie możesz doczekać się premiery?</h2>
       <p class="premiere__text">Poinformujemy Cię o terminie!</p>
       <p class="premiere__text">Zapisz się już dziś i odbierz nagrodę!</p>
-      <a href="/memory/game.html">Zagraj w grę</a>
+      <a class="game-link" href="http://www.move-your-fit.jfddl8.is-academy.pl/game/game.html">Zagraj w grę</a>
       <form action="https://formspree.io/moveyourfit@onet.pl" method="POST">
         <input class="form__box" type="text" name="name" placeholder="Imię">
         <input class="form__box" type="email" name="_replyto" placeholder="E-mail">
         <input class="button__send" type="submit" value="Zapisz się!">
-        <!-- <input type="hidden" name="_next" value="
-        https://www.move-your-fit.jfddl8.is-academy.pl/memory/game.html"> -->
+        <input type="hidden" name="_next" value="
+        http://www.move-your-fit.jfddl8.is-academy.pl/game/game.html">
       </form>
 
       <p class="premiere__email">*Informujemy, że wyślemy tylko jednego maila z informacją o premierze.</p>
@@ -264,8 +243,6 @@
             <div class="follow-us clearfix">
               <a class="author__socialmedialink" href="https://www.facebook.com/angelika.maciazek" target="_blank"><i
                   class="author__socialmediaicon fab fa-facebook"></i></a>
-              <a class="author__socialmedialink" href="https://www.instagram.com/maangelika/" target="_blank"><i
-                  class="author__socialmediaicon fab fa-instagram"></i></a>
               <a class="author__socialmedialink" href="https://github.com/angelikamaciazek" target="_blank"><i
                   class="author__socialmediaicon fab fa-github"></i></a>
               <a class="author__socialmedialink"
@@ -317,6 +294,44 @@
           </div>
         </div>
     </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-form">
+        <h1 class="section-name">Masz pytania?</h1>
+        <h2 class="form-call">Skontaktuj się z nami!</h2>
+        <form action="https://formspree.io/moveyourfit@onet.pl" method="POST">
+         <div class="contact-form__group">
+          <div class="contact-form__input-wrap">
+           <input class="contact-form__input" type="text" placeholder="Imię">
+           <span class="contact-form__label"></span>
+          </div>
+          <div class="contact-form__input-wrap">
+           <input class="contact-form__input" type="text" placeholder="E-mail">
+           <span class="contact-form__label"></span>
+          </div>
+         </div>
+         <div class="contact-form__group">
+          <div class="contact-form__input-wrap">
+           <input class="contact-form__input" type="text" placeholder="Temat">
+           <span class="contact-form__label"></span>
+          </div>
+         </div>
+         <div class="contact-form__group">
+          <div class="contact-form__input-wrap">
+       
+           <textarea class="contact-form__textarea" placeholder="O co chcesz zapytać?" name="msg"></textarea>
+           <label class="contact-form__label"></label>
+          </div>
+       
+         </div>
+         <div class="contact-form__group">
+          <div class="contact-form__submit">
+           <div class="button">Wyślij</div>
+          </div>
+         </div>
+        </form>
+       </div>
+    </section>
     <section class="container-fluid">
       <div class="row">
         <div class="col-lg-12 col-md-4 col-xl-3">
@@ -331,12 +346,9 @@
         </div>
       </div>
     </section>
-    <section class="footer__container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p class="footer__container--text">Copyright &copy; Harmony Team. All Rights Reserved. Data ostatniej
-            publikacji 07/2019</p>
-        </div>
+    <section class="footer">
+      <div class="footer-text">
+          © Copyright by HarmonyTeam 2019
       </div>
     </section>
   </main>
@@ -354,6 +366,7 @@
   <script src="./js/avatar-animations.js"></script>
   <script src="./js/cookie.js"></script>
   <script src="./header-scripts.js"></script>
+  <script src="./hamburger.js"></script>
 </body>
 
 </html>

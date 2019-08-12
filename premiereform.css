@@ -5,22 +5,23 @@
 .premiere{
   width: 100%;
   text-align: center;
-  background-color: #eee;
+  background-color: #fff;
   padding-bottom: 20px;
 }
 .premiere__text{
 font-size: 20px;
 }
 .form__box{
-background-color: #393e46;
+background-color: #222831;
 display: block;
 margin: 10px auto;
 text-align: center;
 font-size: 18px;
 border-radius: 40px;
-border: 2px solid #393e46;
+border: 2px solid #222831;
 height: 50px;
 width: 300px;
+color: #fff;
 }
 .form__box:focus{
   outline: transparent;
@@ -38,15 +39,15 @@ width: 300px;
   width: 120px;
 }
 .button__send:hover{
-  background-color: #393e46;
-  border: 2px solid #393e46;
+  background-color: #222831;
+  border: 2px solid #222831;
   transition: 0.5s;
 }
 
 .premiere__email{
  margin: 10px 0 5px 0;
   font-size: 10px;
-  color: #393e46;
+  color: #222831;
 }
 
 .premiere__private-politycy{
@@ -55,5 +56,5 @@ width: 300px;
 }
 
 .premiere__private-politycy:hover{
-  color: #393e46;
+  color: #222831;
 }
