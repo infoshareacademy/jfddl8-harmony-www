@@ -288,5 +288,10 @@ function audioManager(){
     LIFE_LOST.muted = LIFE_LOST.muted ? false : true
 }
 
+const gameover = document.getElementById("gameover")
+const youwin = document.getElementById("youwin")
+const youlose = document.getElementById("youlose")
+const restart = document.getElementById("restart")
+
 
 
